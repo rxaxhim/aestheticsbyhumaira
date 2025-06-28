@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Treatments | Dr. Humaira's Laser & Advanced Aesthetics</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="images/medspaLogo.png">
+  <style>
+    .accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: max-height 0.5s cubic-bezier(0.4,0,0.2,1), opacity 0.3s;
+    }
+    .accordion-item.open .accordion-content {
+      max-height: 1000px;
+      opacity: 1;
+      transition: max-height 0.7s cubic-bezier(0.4,0,0.2,1), opacity 0.3s;
+    }
+    .chevron {
+      transition: transform 0.4s cubic-bezier(0.4,0,0.2,1);
+    }
+    .accordion-item.open .chevron {
+      transform: rotate(90deg);
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-900 font-sans flex flex-col min-h-screen">
+  <!-- Announcement bar + Nav -->
+  <div class="bg-pink-100 text-center py-2 text-pink-700 text-sm font-semibold tracking-wide">
+    CURRENT PROMOTIONS: Level up your skin goals this month!
+  </div>
+  <nav class="bg-white shadow-sm w-full z-40 sticky top-0 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex flex-col lg:flex-row lg:items-center lg:justify-between">
+      <div class="flex flex-col lg:flex-row items-center gap-3 w-full">
+        <img src="images/medspaLogo.png"
+            alt="Medspa Logo"
+            class="w-24 h-24 sm:w-24 sm:h-24 lg:w-28 lg:h-28 object-cover rounded-full drop-shadow-lg mx-auto lg:mx-0 transition-all duration-300">
+        <div class="flex flex-col lg:flex-row items-center w-full justify-center relative">
+          <div class="flex flex-col items-center lg:items-end text-center lg:text-right relative">
+            <span class="font-extrabold text-pink-700 text-2xl md:text-3xl lg:text-4xl block leading-none"
+                  style="font-size:clamp(1.5rem,4vw,2.8rem);">
+              Dr. Humaira's Laser
+            </span>
+            <div class="flex items-center justify-center lg:justify-end">
+              <span class="font-extrabold text-pink-700 text-2xl md:text-3xl lg:text-4xl mx-2 lg:hidden"
+                    style="font-size:clamp(1.5rem,4vw,2.8rem);">
+                &
+              </span>
+              <span class="font-extrabold text-pink-700 text-2xl md:text-3xl lg:text-4xl block leading-none"
+                    style="font-size:clamp(1.5rem,4vw,2.8rem);">
+                Advanced Aesthetics
+              </span>
+            </div>
+            <span class="hidden lg:flex font-extrabold text-pink-700 text-4xl absolute top-1/2 -right-16"
+                  style="transform:translateY(-50%);font-size:2.8rem;">
+              &
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-wrap justify-center gap-6 mt-5 lg:mt-0 text-lg w-full lg:w-auto">
+        <a href="index.html" class="hover:text-pink-700 transition-colors duration-200">Home</a>
+        <a href="about.html" class="hover:text-pink-600 transition-colors duration-200">About</a>
+        <a href="treatments.html" class="text-pink-700 font-semibold underline underline-offset-8 transition-colors duration-200">Treatments</a>
+        <a href="contact.html" class="hover:text-pink-600 transition-colors duration-200">Contact</a>
+        <span class="hidden md:inline text-gray-500 text-base ml-2 select-none whitespace-nowrap">Call/Text: (123) 456-7890</span>
+      </div>
+    </div>
+  </nav>
+
+    <!-- HERO Section -->
+  <div class="w-full bg-gradient-to-r from-pink-50 to-white border-b border-pink-100 py-10 mb-4">
+    <div class="max-w-4xl mx-auto text-center">
+      <h1 class="text-3xl md:text-4xl font-bold text-pink-700 mb-2">Our Treatments</h1>
+      <p class="text-lg text-gray-700">From laser hair removal to rejuvenating facials and relaxing massages, we offer advanced, personalized treatments for every skin type and beauty goal. Discover our most popular services below.</p>
+    </div>
+  </div>
+
+  <main class="flex-grow flex flex-col">
+    <!-- Treatments Section -->
+    <section class="max-w-3xl w-full mx-auto mt-8 px-2 md:px-0">
+      <div class="space-y-4">
+
+        <!-- Laser Hair Removal -->
+        <div class="accordion-item rounded-xl bg-white/90 shadow border border-pink-100 group transition">
+          <button type="button" class="w-full flex items-center px-5 py-4 text-lg md:text-xl font-bold text-pink-700 hover:bg-pink-50 rounded-xl select-none transition-all focus:outline-none"
+            aria-expanded="false">
+            <span class="mr-4 h-6 w-1.5 bg-pink-300 rounded-full"></span>
+            Laser Hair Removal
+            <span class="ml-auto chevron">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                class="w-6 h-6 text-pink-400 group-hover:text-pink-600">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
+            </span>
+          </button>
+          <div class="accordion-content">
+            <div class="px-5 pb-5 mt-3 grid grid-cols-1 md:grid-cols-2 gap-3">
+              <div class="rounded-lg bg-pink-50 shadow hover:shadow-md transition p-4 flex items-center font-semibold text-gray-800 hover:bg-pink-100 cursor-pointer">Full Body Laser</div>
+              <div class="rounded-lg bg-pink-50 shadow hover:shadow-md transition p-4 flex items-center font-semibold text-gray-800 hover:bg-pink-100 cursor-pointer">Face & Neck Laser</div>
+              <div class="rounded-lg bg-pink-50 shadow hover:shadow-md transition p-4 flex items-center font-semibold text-gray-800 hover:bg-pink-100 cursor-pointer">Legs, Arms, Underarms, Bikini</div>
+              <div class="rounded-lg bg-pink-50 shadow hover:shadow-md transition p-4 flex items-center font-semibold text-gray-800 hover:bg-pink-100 cursor-pointer">Back & Chest</div>
+              <div class="rounded-lg bg-pink-50 shadow hover:shadow-md transition p-4 flex items-center font-semibold text-gray-800 hover:bg-pink-100 cursor-pointer">Touch-Ups & Packages</div>
+            </div>
+            <div class="bg-white/80 border-l-4 border-pink-300 mt-4 px-6 py-3 rounded-lg shadow-sm text-base text-gray-700 italic font-medium flex items-center gap-2">
+              <svg class="w-5 h-5 text-pink-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m2-4h.01M12 20.5A8.5 8.5 0 1 0 12 3.5a8.5 8.5 0 0 0 0 17zm0 0v.5m0-17v.5"/></svg>
+              Safe for all skin types. Advanced, virtually painless laser technology for lasting smoothness and confidence.
+            </div>
+          </div>
+        </div>
+
+        <!-- Facials -->
+        <div class="accordion-item rounded-xl bg-white/90 shadow border border-pink-100 group transition">
+          <button type="button" class="w-full flex items-center px-5 py-4 text-lg md:text-xl font-bold text-pink-700 hover:bg-pink-50 rounded-xl select-none transition-all focus:outline-none"
+            aria-expanded="false">
+            <span class="mr-4 h-6 w-1.5 bg-pink-300 rounded-full"></span>
+            Facials
+            <span class="ml-auto chevron">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                class="w-6 h-6 text-pink-400 group-hover:text-pink-600">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
+            </span>
+          </button>
+          <div class="accordion-content">
+            <div class="px-5 pb-5 mt-3 grid grid-cols-1 md:grid-cols-2 gap-3">
+              <div class="rounded-lg bg-pink-50 shadow hover:shadow-md transition p-4 flex items-center font-semibold text-gray-800 hover:bg-pink-100 cursor-pointer">Signature Glow Facial</div>
+              <div class="rounded-lg bg-pink-50 shadow hover:shadow-md transition p-4 flex items-center font-semibold text-gray-800 hover:bg-pink-100 cursor-pointer">Hydrating Facial</div>
+              <div class="rounded-lg bg-pink-50 shadow hover:shadow-md transition p-4 flex items-center font-semibold text-gray-800 hover:bg-pink-100 cursor-pointer">Acne & Deep Cleanse</div>
+              <div class="rounded-lg bg-pink-50 shadow hover:shadow-md transition p-4 flex items-center font-semibold text-gray-800 hover:bg-pink-100 cursor-pointer">Anti-Aging Facial</div>
+              <div class="rounded-lg bg-pink-50 shadow hover:shadow-md transition p-4 flex items-center font-semibold text-gray-800 hover:bg-pink-100 cursor-pointer">Dermaplaning</div>
+              <div class="rounded-lg bg-pink-50 shadow hover:shadow-md transition p-4 flex items-center font-semibold text-gray-800 hover:bg-pink-100 cursor-pointer">Microdermabrasion</div>
+              <div class="rounded-lg bg-pink-50 shadow hover:shadow-md transition p-4 flex items-center font-semibold text-gray-800 hover:bg-pink-100 cursor-pointer">Chemical Peels</div>
+              <div class="rounded-lg bg-pink-50 shadow hover:shadow-md transition p-4 flex items-center font-semibold text-gray-800 hover:bg-pink-100 cursor-pointer">Teen Facials</div>
+            </div>
+            <div class="bg-white/80 border-l-4 border-pink-300 mt-4 px-6 py-3 rounded-lg shadow-sm text-base text-gray-700 italic font-medium flex items-center gap-2">
+              <svg class="w-5 h-5 text-pink-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m2-4h.01M12 20.5A8.5 8.5 0 1 0 12 3.5a8.5 8.5 0 0 0 0 17zm0 0v.5m0-17v.5"/></svg>
+              Personalized for every skin type & concern. Instant glow, hydration and deep renewal with every visit.
+            </div>
+          </div>
+        </div>
+
+        <!-- Skin Rejuvenation -->
+        <div class="accordion-item rounded-xl bg-white/90 shadow border border-pink-100 group transition">
+          <button type="button" class="w-full flex items-center px-5 py-4 text-lg md:text-xl font-bold text-pink-700 hover:bg-pink-50 rounded-xl select-none transition-all focus:outline-none"
+            aria-expanded="false">
+            <span class="mr-4 h-6 w-1.5 bg-pink-300 rounded-full"></span>
+            Skin Rejuvenation
+            <span class="ml-auto chevron">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                class="w-6 h-6 text-pink-400 group-hover:text-pink-600">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
+            </span>
+          </button>
+          <div class="accordion-content">
+            <div class="px-5 pb-5 mt-3 grid grid-cols-1 md:grid-cols-2 gap-3">
+              <div class="rounded-lg bg-pink-50 shadow hover:shadow-md transition p-4 flex items-center font-semibold text-gray-800 hover:bg-pink-100 cursor-pointer">Microneedling</div>
+              <div class="rounded-lg bg-pink-50 shadow hover:shadow-md transition p-4 flex items-center font-semibold text-gray-800 hover:bg-pink-100 cursor-pointer">RF Skin Tightening</div>
+              <div class="rounded-lg bg-pink-50 shadow hover:shadow-md transition p-4 flex items-center font-semibold text-gray-800 hover:bg-pink-100 cursor-pointer">Photo Facials</div>
+              <div class="rounded-lg bg-pink-50 shadow hover:shadow-md transition p-4 flex items-center font-semibold text-gray-800 hover:bg-pink-100 cursor-pointer">Sun & Age Spot Removal</div>
+              <div class="rounded-lg bg-pink-50 shadow hover:shadow-md transition p-4 flex items-center font-semibold text-gray-800 hover:bg-pink-100 cursor-pointer">Scar & Stretch Mark Treatments</div>
+              <div class="rounded-lg bg-pink-50 shadow hover:shadow-md transition p-4 flex items-center font-semibold text-gray-800 hover:bg-pink-100 cursor-pointer">Skin Brightening</div>
+            </div>
+            <div class="bg-white/80 border-l-4 border-pink-300 mt-4 px-6 py-3 rounded-lg shadow-sm text-base text-gray-700 italic font-medium flex items-center gap-2">
+              <svg class="w-5 h-5 text-pink-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m2-4h.01M12 20.5A8.5 8.5 0 1 0 12 3.5a8.5 8.5 0 0 0 0 17zm0 0v.5m0-17v.5"/></svg>
+              Cutting-edge solutions to smooth, renew and brighten your skin for visible results.
+            </div>
+          </div>
+        </div>
+
+        <!-- Body Contouring -->
+        <div class="accordion-item rounded-xl bg-white/90 shadow border border-pink-100 group transition">
+          <button type="button" class="w-full flex items-center px-5 py-4 text-lg md:text-xl font-bold text-pink-700 hover:bg-pink-50 rounded-xl select-none transition-all focus:outline-none"
+            aria-expanded="false">
+            <span class="mr-4 h-6 w-1.5 bg-pink-300 rounded-full"></span>
+            Body Contouring
+            <span class="ml-auto chevron">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                class="w-6 h-6 text-pink-400 group-hover:text-pink-600">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
+            </span>
+          </button>
+          <div class="accordion-content">
+            <div class="px-5 pb-5 mt-3 grid grid-cols-1 md:grid-cols-2 gap-3">
+              <div class="rounded-lg bg-pink-50 shadow hover:shadow-md transition p-4 flex items-center font-semibold text-gray-800 hover:bg-pink-100 cursor-pointer">Cryolipolysis (Fat Freezing)</div>
+              <div class="rounded-lg bg-pink-50 shadow hover:shadow-md transition p-4 flex items-center font-semibold text-gray-800 hover:bg-pink-100 cursor-pointer">RF Body Tightening</div>
+              <div class="rounded-lg bg-pink-50 shadow hover:shadow-md transition p-4 flex items-center font-semibold text-gray-800 hover:bg-pink-100 cursor-pointer">Cellulite Reduction</div>
+              <div class="rounded-lg bg-pink-50 shadow hover:shadow-md transition p-4 flex items-center font-semibold text-gray-800 hover:bg-pink-100 cursor-pointer">Body Sculpting</div>
+            </div>
+            <div class="bg-white/80 border-l-4 border-pink-300 mt-4 px-6 py-3 rounded-lg shadow-sm text-base text-gray-700 italic font-medium flex items-center gap-2">
+              <svg class="w-5 h-5 text-pink-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m2-4h.01M12 20.5A8.5 8.5 0 1 0 12 3.5a8.5 8.5 0 0 0 0 17zm0 0v.5m0-17v.5"/></svg>
+              Non-surgical solutions for slimming, toning, and confidence in your shape.
+            </div>
+          </div>
+        </div>
+
+        <!-- Massages -->
+        <div class="accordion-item rounded-xl bg-white/90 shadow border border-pink-100 group transition">
+          <button type="button" class="w-full flex items-center px-5 py-4 text-lg md:text-xl font-bold text-pink-700 hover:bg-pink-50 rounded-xl select-none transition-all focus:outline-none"
+            aria-expanded="false">
+            <span class="mr-4 h-6 w-1.5 bg-pink-300 rounded-full"></span>
+            Massages & Relaxation
+            <span class="ml-auto chevron">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                class="w-6 h-6 text-pink-400 group-hover:text-pink-600">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
+            </span>
+          </button>
+          <div class="accordion-content">
+            <div class="px-5 pb-5 mt-3 grid grid-cols-1 md:grid-cols-2 gap-3">
+              <div class="rounded-lg bg-pink-50 shadow hover:shadow-md transition p-4 flex items-center font-semibold text-gray-800 hover:bg-pink-100 cursor-pointer">Relaxation Massage</div>
+              <div class="rounded-lg bg-pink-50 shadow hover:shadow-md transition p-4 flex items-center font-semibold text-gray-800 hover:bg-pink-100 cursor-pointer">Lymphatic Drainage</div>
+              <div class="rounded-lg bg-pink-50 shadow hover:shadow-md transition p-4 flex items-center font-semibold text-gray-800 hover:bg-pink-100 cursor-pointer">Head & Scalp Massage</div>
+              <div class="rounded-lg bg-pink-50 shadow hover:shadow-md transition p-4 flex items-center font-semibold text-gray-800 hover:bg-pink-100 cursor-pointer">Hand & Foot Treatments</div>
+            </div>
+            <div class="bg-white/80 border-l-4 border-pink-300 mt-4 px-6 py-3 rounded-lg shadow-sm text-base text-gray-700 italic font-medium flex items-center gap-2">
+              <svg class="w-5 h-5 text-pink-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m2-4h.01M12 20.5A8.5 8.5 0 1 0 12 3.5a8.5 8.5 0 0 0 0 17zm0 0v.5m0-17v.5"/></svg>
+              Treat yourself to restorative and calming touch therapies.
+            </div>
+          </div>
+        </div>
+
+        <!-- Brows & Lashes -->
+        <div class="accordion-item rounded-xl bg-white/90 shadow border border-pink-100 group transition">
+          <button type="button" class="w-full flex items-center px-5 py-4 text-lg md:text-xl font-bold text-pink-700 hover:bg-pink-50 rounded-xl select-none transition-all focus:outline-none"
+            aria-expanded="false">
+            <span class="mr-4 h-6 w-1.5 bg-pink-300 rounded-full"></span>
+            Brows & Lashes
+            <span class="ml-auto chevron">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                class="w-6 h-6 text-pink-400 group-hover:text-pink-600">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
+            </span>
+          </button>
+          <div class="accordion-content">
+            <div class="px-5 pb-5 mt-3 grid grid-cols-1 md:grid-cols-2 gap-3">
+              <div class="rounded-lg bg-pink-50 shadow hover:shadow-md transition p-4 flex items-center font-semibold text-gray-800 hover:bg-pink-100 cursor-pointer">Eyebrow Shaping</div>
+              <div class="rounded-lg bg-pink-50 shadow hover:shadow-md transition p-4 flex items-center font-semibold text-gray-800 hover:bg-pink-100 cursor-pointer">Threading & Waxing</div>
+              <div class="rounded-lg bg-pink-50 shadow hover:shadow-md transition p-4 flex items-center font-semibold text-gray-800 hover:bg-pink-100 cursor-pointer">Lash Lifts & Tints</div>
+              <div class="rounded-lg bg-pink-50 shadow hover:shadow-md transition p-4 flex items-center font-semibold text-gray-800 hover:bg-pink-100 cursor-pointer">Brow Lamination</div>
+            </div>
+            <div class="bg-white/80 border-l-4 border-pink-300 mt-4 px-6 py-3 rounded-lg shadow-sm text-base text-gray-700 italic font-medium flex items-center gap-2">
+              <svg class="w-5 h-5 text-pink-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m2-4h.01M12 20.5A8.5 8.5 0 1 0 12 3.5a8.5 8.5 0 0 0 0 17zm0 0v.5m0-17v.5"/></svg>
+              Accentuate your features with gentle, precise brow and lash services.
+            </div>
+          </div>
+        </div>
+
+        <!-- Additional -->
+        <div class="accordion-item rounded-xl bg-white/90 shadow border border-pink-100 group transition">
+          <button type="button" class="w-full flex items-center px-5 py-4 text-lg md:text-xl font-bold text-pink-700 hover:bg-pink-50 rounded-xl select-none transition-all focus:outline-none"
+            aria-expanded="false">
+            <span class="mr-4 h-6 w-1.5 bg-pink-300 rounded-full"></span>
+            Other Spa Services
+            <span class="ml-auto chevron">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                class="w-6 h-6 text-pink-400 group-hover:text-pink-600">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
+            </span>
+          </button>
+          <div class="accordion-content">
+            <div class="px-5 pb-5 mt-3 grid grid-cols-1 md:grid-cols-2 gap-3">
+              <div class="rounded-lg bg-pink-50 shadow hover:shadow-md transition p-4 flex items-center font-semibold text-gray-800 hover:bg-pink-100 cursor-pointer">Waxing & Threading (Face/Body)</div>
+              <div class="rounded-lg bg-pink-50 shadow hover:shadow-md transition p-4 flex items-center font-semibold text-gray-800 hover:bg-pink-100 cursor-pointer">Specialized Masks & Peels</div>
+              <div class="rounded-lg bg-pink-50 shadow hover:shadow-md transition p-4 flex items-center font-semibold text-gray-800 hover:bg-pink-100 cursor-pointer">Custom Packages</div>
+            </div>
+            <div class="bg-white/80 border-l-4 border-pink-300 mt-4 px-6 py-3 rounded-lg shadow-sm text-base text-gray-700 italic font-medium flex items-center gap-2">
+              <svg class="w-5 h-5 text-pink-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m2-4h.01M12 20.5A8.5 8.5 0 1 0 12 3.5a8.5 8.5 0 0 0 0 17zm0 0v.5m0-17v.5"/></svg>
+              Ask us about tailored spa experiences and packages.
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- Book Now CTA -->
+      <div class="flex justify-center mt-10 mb-8">
+        <a href="https://aestheticsbyhumaira.setmore.com/" target="_blank"
+           class="inline-block px-10 py-3 bg-pink-600 text-white rounded-full font-bold text-xl shadow-lg hover:bg-pink-700 focus:bg-pink-700 transition-all duration-200">
+          Book Your Appointment
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 py-8 mt-auto border-t border-gray-200 relative" id="main-footer">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row md:justify-between items-center gap-4">
+      <div class="flex items-center gap-3 mb-2 md:mb-0">
+        <img src="images/medspaLogo.png" alt="logo" class="w-8 h-8 object-cover rounded-full">
+        <span class="font-bold text-pink-700 text-lg whitespace-nowrap">Dr. Humaira's Laser & Advanced Aesthetics</span>
+      </div>
+      <div class="flex gap-6 mb-2 md:mb-0">
+        <a href="index.html" class="hover:text-pink-700 transition-colors duration-200">Home</a>
+        <a href="about.html" class="hover:text-pink-700 transition-colors duration-200">About</a>
+        <a href="treatments.html" class="hover:text-pink-700 transition-colors duration-200">Treatments</a>
+        <a href="contact.html" class="hover:text-pink-700 transition-colors duration-200">Contact</a>
+      </div>
+      <div class="flex items-center gap-5">
+        <a href="mailto:info@drhumaira.com" class="group" aria-label="Email">
+          <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" class="w-6 h-6 text-gray-700 group-hover:text-pink-600 transition duration-200">
+            <path d="M21 8v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8m18 0V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2m18 0l-9 6-9-6"/>
+          </svg>
+        </a>
+        <a href="tel:1234567890" class="group" aria-label="Phone">
+          <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" class="w-6 h-6 text-gray-700 group-hover:text-pink-600 transition duration-200">
+            <path d="M22 16.92V19a2 2 0 0 1-2.18 2A19.78 19.78 0 0 1 3 5.18 2 2 0 0 1 5 3h2.09a2 2 0 0 1 2 1.72c.12.81.28 1.61.5 2.38a2 2 0 0 1-.45 2.11l-.27.27a16 16 0 0 0 6.29 6.29l.27-.27a2 2 0 0 1 2.11-.45c.77.22 1.57.38 2.38.5A2 2 0 0 1 22 16.92z"/>
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" class="group" aria-label="Instagram">
+          <svg fill="currentColor" viewBox="0 0 24 24" class="w-6 h-6 text-gray-700 group-hover:text-pink-600 transition duration-200">
+            <path d="M7.75 2A5.75 5.75 0 0 0 2 7.75v8.5A5.75 5.75 0 0 0 7.75 22h8.5A5.75 5.75 0 0 0 22 16.25v-8.5A5.75 5.75 0 0 0 16.25 2h-8.5Zm0 1.5h8.5A4.25 4.25 0 0 1 20.5 7.75v8.5a4.25 4.25 0 0 1-4.25 4.25h-8.5A4.25 4.25 0 0 1 3.5 16.25v-8.5A4.25 4.25 0 0 1 7.75 3.5ZM12 7.25A4.75 4.75 0 1 0 12 16.75 4.75 4.75 0 0 0 12 7.25Zm0 1.5a3.25 3.25 0 1 1 0 6.5 3.25 3.25 0 0 1 0-6.5Zm6-1.38a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"/>
+          </svg>
+        </a>
+        <a href="https://www.facebook.com/" target="_blank" class="group" aria-label="Facebook">
+          <svg fill="currentColor" viewBox="0 0 24 24" class="w-6 h-6 text-gray-700 group-hover:text-pink-600 transition duration-200">
+            <path d="M22.675 0h-21.35C.595 0 0 .592 0 1.326v21.348C0 23.408.595 24 1.325 24H12.82v-9.294H9.692V11.01h3.127V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.797.143v3.24l-1.92.001c-1.504 0-1.797.715-1.797 1.763v2.31h3.587l-.467 3.696h-3.12V24h6.116C23.405 24 24 23.408 24 22.674V1.326C24 .592 23.405 0 22.675 0"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="text-center mt-4 text-xs text-gray-400">© 2025 Dr. Humaira's Laser & Advanced Aesthetics. All rights reserved.</div>
+  </footer>
+  <script>
+    document.querySelectorAll('.accordion-item button').forEach(btn => {
+      btn.addEventListener('click', function() {
+        const item = btn.closest('.accordion-item');
+        const isOpen = item.classList.contains('open');
+        // Close all others
+        document.querySelectorAll('.accordion-item').forEach(i => {
+          i.classList.remove('open');
+          i.querySelector('button').setAttribute('aria-expanded', 'false');
+        });
+        // Toggle this one
+        if (!isOpen) {
+          item.classList.add('open');
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
