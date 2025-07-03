@@ -15,7 +15,7 @@
       transition: max-height 0.5s cubic-bezier(0.4,0,0.2,1), opacity 0.3s;
     }
     .accordion-item.open .accordion-content {
-      max-height: 1000px;
+      max-height: 2000px;
       opacity: 1;
       transition: max-height 0.7s cubic-bezier(0.4,0,0.2,1), opacity 0.3s;
     }
@@ -73,9 +73,10 @@
 
     <!-- HERO Section -->
   <div class="w-full bg-gradient-to-r from-pink-50 to-white border-b border-pink-100 py-10 mb-4">
-    <div class="max-w-4xl mx-auto text-center">
+    <div class="max-w-4xl mx-auto text-center px-4">
       <h1 class="text-3xl md:text-4xl font-bold text-pink-700 mb-2">Our Treatments</h1>
-      <p class="text-lg text-gray-700">From laser hair removal and anti-aging facials to skin rejuvenation and relaxing body treatments, we offer a full range of advanced, personalized services for all skin types and beauty goals. Our treatments are designed to deliver visible, lasting results in a safe, welcoming environment. Explore some of our most popular medical spa services in Mississauga below.</p>
+      <p class="text-lg text-gray-700">From laser hair removal and anti-aging facials to skin rejuvenation and relaxing body treatments, we offer a full range of advanced, personalized services for all skin types and beauty goals.<br><br>
+         Our treatments are designed to deliver visible, lasting results in a safe, welcoming environment. Explore some of our most popular medical spa services in Mississauga below.</p>
     </div>
   </div>
 
@@ -98,18 +99,50 @@
             </span>
           </button>
           <div class="accordion-content">
-            <div class="px-5 pb-5 mt-3 grid grid-cols-1 md:grid-cols-2 gap-3">
-              <div class="rounded-lg bg-pink-50 shadow hover:shadow-md transition p-4 flex items-center font-semibold text-gray-800 hover:bg-pink-100 cursor-pointer">Full Body Laser</div>
-              <div class="rounded-lg bg-pink-50 shadow hover:shadow-md transition p-4 flex items-center font-semibold text-gray-800 hover:bg-pink-100 cursor-pointer">Face & Neck Laser</div>
-              <div class="rounded-lg bg-pink-50 shadow hover:shadow-md transition p-4 flex items-center font-semibold text-gray-800 hover:bg-pink-100 cursor-pointer">Legs, Arms, Underarms, Bikini</div>
-              <div class="rounded-lg bg-pink-50 shadow hover:shadow-md transition p-4 flex items-center font-semibold text-gray-800 hover:bg-pink-100 cursor-pointer">Back & Chest</div>
-              <div class="rounded-lg bg-pink-50 shadow hover:shadow-md transition p-4 flex items-center font-semibold text-gray-800 hover:bg-pink-100 cursor-pointer">Touch-Ups & Packages</div>
+          <div class="px-5 pb-5 mt-3 grid grid-cols-1 md:grid-cols-2 gap-3">
+
+            <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
+              <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
+                <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/></svg>
+                Full Body Laser
+              </div>
+              <p class="text-sm text-gray-600 leading-snug">Comprehensive treatment for full-body smoothness using cutting-edge laser tech.</p>
             </div>
-            <div class="bg-white/80 border-l-4 border-pink-300 mt-4 px-6 py-3 rounded-lg shadow-sm text-base text-gray-700 italic font-medium flex items-center gap-2">
-              <svg class="w-5 h-5 text-pink-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m2-4h.01M12 20.5A8.5 8.5 0 1 0 12 3.5a8.5 8.5 0 0 0 0 17zm0 0v.5m0-17v.5"/></svg>
-              Safe for all skin types. Advanced, virtually painless laser technology for lasting smoothness and confidence.
+
+            <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
+              <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
+                <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/></svg>
+                Face & Neck Laser
+              </div>
+              <p class="text-sm text-gray-600 leading-snug">Gentle laser care for delicate face and neck areas to reduce unwanted hair.</p>
             </div>
+
+            <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
+              <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
+                <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/></svg>
+                Legs, Arms, Underarms, Bikini
+              </div>
+              <p class="text-sm text-gray-600 leading-snug">Customizable zones for hair-free confidence with long-lasting results.</p>
+            </div>
+
+            <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
+              <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
+                <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/></svg>
+                Back & Chest
+              </div>
+              <p class="text-sm text-gray-600 leading-snug">Effective solution for larger areas with coarse or dense hair.</p>
+            </div>
+
+            <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
+              <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
+                <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/></svg>
+                Touch-Ups & Packages
+              </div>
+              <p class="text-sm text-gray-600 leading-snug">Flexible sessions to maintain smoothness or save on bundled treatments.</p>
+            </div>
+
           </div>
+        </div>
         </div>
 
         <!-- Facials -->
@@ -125,22 +158,84 @@
               </svg>
             </span>
           </button>
-          <div class="accordion-content">
-            <div class="px-5 pb-5 mt-3 grid grid-cols-1 md:grid-cols-2 gap-3">
-              <div class="rounded-lg bg-pink-50 shadow hover:shadow-md transition p-4 flex items-center font-semibold text-gray-800 hover:bg-pink-100 cursor-pointer">Signature Glow Facial</div>
-              <div class="rounded-lg bg-pink-50 shadow hover:shadow-md transition p-4 flex items-center font-semibold text-gray-800 hover:bg-pink-100 cursor-pointer">Hydrating Facial</div>
-              <div class="rounded-lg bg-pink-50 shadow hover:shadow-md transition p-4 flex items-center font-semibold text-gray-800 hover:bg-pink-100 cursor-pointer">Acne & Deep Cleanse</div>
-              <div class="rounded-lg bg-pink-50 shadow hover:shadow-md transition p-4 flex items-center font-semibold text-gray-800 hover:bg-pink-100 cursor-pointer">Anti-Aging Facial</div>
-              <div class="rounded-lg bg-pink-50 shadow hover:shadow-md transition p-4 flex items-center font-semibold text-gray-800 hover:bg-pink-100 cursor-pointer">Dermaplaning</div>
-              <div class="rounded-lg bg-pink-50 shadow hover:shadow-md transition p-4 flex items-center font-semibold text-gray-800 hover:bg-pink-100 cursor-pointer">Microdermabrasion</div>
-              <div class="rounded-lg bg-pink-50 shadow hover:shadow-md transition p-4 flex items-center font-semibold text-gray-800 hover:bg-pink-100 cursor-pointer">Chemical Peels</div>
-              <div class="rounded-lg bg-pink-50 shadow hover:shadow-md transition p-4 flex items-center font-semibold text-gray-800 hover:bg-pink-100 cursor-pointer">Teen Facials</div>
+        <div class="accordion-content">
+          <div class="px-5 pb-5 mt-3 grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
+              <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
+                <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/>
+                </svg>
+                Hollywood/Carbon Laser Facial
+              </div>
+              <p class="text-sm text-gray-600 leading-snug">A celebrity-favorite treatment that deeply exfoliates, clears pores, and leaves skin smooth and radiant.</p>
             </div>
-            <div class="bg-white/80 border-l-4 border-pink-300 mt-4 px-6 py-3 rounded-lg shadow-sm text-base text-gray-700 italic font-medium flex items-center gap-2">
-              <svg class="w-5 h-5 text-pink-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m2-4h.01M12 20.5A8.5 8.5 0 1 0 12 3.5a8.5 8.5 0 0 0 0 17zm0 0v.5m0-17v.5"/></svg>
-              Personalized for every skin type & concern. Instant glow, hydration and deep renewal with every visit.
+
+            <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
+              <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
+                <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/></svg>
+                Signature Glow Facial
+              </div>
+              <p class="text-sm text-gray-600 leading-snug">Revitalize dull skin with deep hydration and a luminous finish.</p>
+            </div>
+
+            <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
+              <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
+                <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/></svg>
+                Hydrating Facial
+              </div>
+              <p class="text-sm text-gray-600 leading-snug">Infuses moisture and nutrients into dry or dehydrated skin.</p>
+            </div>
+
+            <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
+              <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
+                <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/></svg>
+                Acne & Deep Cleanse
+              </div>
+              <p class="text-sm text-gray-600 leading-snug">Cleans clogged pores and calms inflammation for clearer skin.</p>
+            </div>
+
+            <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
+              <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
+                <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/></svg>
+                Anti-Aging Facial
+              </div>
+              <p class="text-sm text-gray-600 leading-snug">Targets fine lines, boosts collagen, and firms skin texture.</p>
+            </div>
+
+            <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
+              <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
+                <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/></svg>
+                Dermaplaning
+              </div>
+              <p class="text-sm text-gray-600 leading-snug">Removes peach fuzz and dead skin for a smooth, radiant surface.</p>
+            </div>
+
+            <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
+              <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
+                <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/></svg>
+                Microdermabrasion
+              </div>
+              <p class="text-sm text-gray-600 leading-snug">Gently exfoliates to refine pores, texture, and tone.</p>
+            </div>
+
+            <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
+              <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
+                <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/></svg>
+                Chemical Peels
+              </div>
+              <p class="text-sm text-gray-600 leading-snug">Brightens, resurfaces, and treats pigmentation and acne marks.</p>
+            </div>
+
+            <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
+              <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
+                <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/></svg>
+                Teen Facials
+              </div>
+              <p class="text-sm text-gray-600 leading-snug">Gentle, age-appropriate skincare for younger, acne-prone skin.</p>
             </div>
           </div>
+        </div>
+
         </div>
 
         <!-- Skin Rejuvenation -->
@@ -157,46 +252,57 @@
             </span>
           </button>
           <div class="accordion-content">
-            <div class="px-5 pb-5 mt-3 grid grid-cols-1 md:grid-cols-2 gap-3">
-              <div class="rounded-lg bg-pink-50 shadow hover:shadow-md transition p-4 flex items-center font-semibold text-gray-800 hover:bg-pink-100 cursor-pointer">Microneedling</div>
-              <div class="rounded-lg bg-pink-50 shadow hover:shadow-md transition p-4 flex items-center font-semibold text-gray-800 hover:bg-pink-100 cursor-pointer">RF Skin Tightening</div>
-              <div class="rounded-lg bg-pink-50 shadow hover:shadow-md transition p-4 flex items-center font-semibold text-gray-800 hover:bg-pink-100 cursor-pointer">Photo Facials</div>
-              <div class="rounded-lg bg-pink-50 shadow hover:shadow-md transition p-4 flex items-center font-semibold text-gray-800 hover:bg-pink-100 cursor-pointer">Sun & Age Spot Removal</div>
-              <div class="rounded-lg bg-pink-50 shadow hover:shadow-md transition p-4 flex items-center font-semibold text-gray-800 hover:bg-pink-100 cursor-pointer">Scar & Stretch Mark Treatments</div>
-              <div class="rounded-lg bg-pink-50 shadow hover:shadow-md transition p-4 flex items-center font-semibold text-gray-800 hover:bg-pink-100 cursor-pointer">Skin Brightening</div>
-            </div>
-            <div class="bg-white/80 border-l-4 border-pink-300 mt-4 px-6 py-3 rounded-lg shadow-sm text-base text-gray-700 italic font-medium flex items-center gap-2">
-              <svg class="w-5 h-5 text-pink-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m2-4h.01M12 20.5A8.5 8.5 0 1 0 12 3.5a8.5 8.5 0 0 0 0 17zm0 0v.5m0-17v.5"/></svg>
-              Cutting-edge solutions to smooth, renew and brighten your skin for visible results.
-            </div>
-          </div>
-        </div>
+            <div class="px-5 pb-5 mt-3 grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
+                <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
+                  <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/></svg>
+                  Microneedling
+                </div>
+                <p class="text-sm text-gray-600 leading-snug">Stimulates collagen production to reduce acne scars, fine lines, and texture.</p>
+              </div>
 
-        <!-- Body Contouring -->
-        <div class="accordion-item rounded-xl bg-white/90 shadow border border-pink-100 group transition">
-          <button type="button" class="w-full flex items-center px-5 py-4 text-lg md:text-xl font-bold text-pink-700 hover:bg-pink-50 rounded-xl select-none transition-all focus:outline-none"
-            aria-expanded="false">
-            <span class="mr-4 h-6 w-1.5 bg-pink-300 rounded-full"></span>
-            Body Contouring
-            <span class="ml-auto chevron">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
-                class="w-6 h-6 text-pink-400 group-hover:text-pink-600">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-              </svg>
-            </span>
-          </button>
-          <div class="accordion-content">
-            <div class="px-5 pb-5 mt-3 grid grid-cols-1 md:grid-cols-2 gap-3">
-              <div class="rounded-lg bg-pink-50 shadow hover:shadow-md transition p-4 flex items-center font-semibold text-gray-800 hover:bg-pink-100 cursor-pointer">Cryolipolysis (Fat Freezing)</div>
-              <div class="rounded-lg bg-pink-50 shadow hover:shadow-md transition p-4 flex items-center font-semibold text-gray-800 hover:bg-pink-100 cursor-pointer">RF Body Tightening</div>
-              <div class="rounded-lg bg-pink-50 shadow hover:shadow-md transition p-4 flex items-center font-semibold text-gray-800 hover:bg-pink-100 cursor-pointer">Cellulite Reduction</div>
-              <div class="rounded-lg bg-pink-50 shadow hover:shadow-md transition p-4 flex items-center font-semibold text-gray-800 hover:bg-pink-100 cursor-pointer">Body Sculpting</div>
-            </div>
-            <div class="bg-white/80 border-l-4 border-pink-300 mt-4 px-6 py-3 rounded-lg shadow-sm text-base text-gray-700 italic font-medium flex items-center gap-2">
-              <svg class="w-5 h-5 text-pink-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m2-4h.01M12 20.5A8.5 8.5 0 1 0 12 3.5a8.5 8.5 0 0 0 0 17zm0 0v.5m0-17v.5"/></svg>
-              Non-surgical solutions for slimming, toning, and confidence in your shape.
+              <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
+                <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
+                  <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/></svg>
+                  RF Skin Tightening
+                </div>
+                <p class="text-sm text-gray-600 leading-snug">Non-invasive tightening that firms sagging skin and contours the face.</p>
+              </div>
+
+              <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
+                <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
+                  <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/></svg>
+                  Photo Facials
+                </div>
+                <p class="text-sm text-gray-600 leading-snug">Light-based therapy to reduce redness, pigmentation, and boost clarity.</p>
+              </div>
+
+              <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
+                <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
+                  <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/></svg>
+                  Sun & Age Spot Removal
+                </div>
+                <p class="text-sm text-gray-600 leading-snug">Targets and fades dark spots and discoloration caused by sun damage.</p>
+              </div>
+
+              <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
+                <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
+                  <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/></svg>
+                  Scar & Stretch Mark Treatments
+                </div>
+                <p class="text-sm text-gray-600 leading-snug">Smooths and minimizes scars and stretch marks using precision treatments.</p>
+              </div>
+
+              <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
+                <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
+                  <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/></svg>
+                  Skin Brightening
+                </div>
+                <p class="text-sm text-gray-600 leading-snug">Evens skin tone and restores radiance for a glowing complexion.</p>
+              </div>
             </div>
           </div>
+
         </div>
 
         <!-- Massages -->
@@ -213,17 +319,59 @@
             </span>
           </button>
           <div class="accordion-content">
-            <div class="px-5 pb-5 mt-3 grid grid-cols-1 md:grid-cols-2 gap-3">
-              <div class="rounded-lg bg-pink-50 shadow hover:shadow-md transition p-4 flex items-center font-semibold text-gray-800 hover:bg-pink-100 cursor-pointer">Relaxation Massage</div>
-              <div class="rounded-lg bg-pink-50 shadow hover:shadow-md transition p-4 flex items-center font-semibold text-gray-800 hover:bg-pink-100 cursor-pointer">Lymphatic Drainage</div>
-              <div class="rounded-lg bg-pink-50 shadow hover:shadow-md transition p-4 flex items-center font-semibold text-gray-800 hover:bg-pink-100 cursor-pointer">Head & Scalp Massage</div>
-              <div class="rounded-lg bg-pink-50 shadow hover:shadow-md transition p-4 flex items-center font-semibold text-gray-800 hover:bg-pink-100 cursor-pointer">Hand & Foot Treatments</div>
-            </div>
-            <div class="bg-white/80 border-l-4 border-pink-300 mt-4 px-6 py-3 rounded-lg shadow-sm text-base text-gray-700 italic font-medium flex items-center gap-2">
-              <svg class="w-5 h-5 text-pink-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m2-4h.01M12 20.5A8.5 8.5 0 1 0 12 3.5a8.5 8.5 0 0 0 0 17zm0 0v.5m0-17v.5"/></svg>
-              Treat yourself to restorative and calming touch therapies.
+            <div class="px-5 pb-5 mt-3 grid grid-cols-1 md:grid-cols-2 gap-4">
+
+              <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
+                <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
+                  <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/></svg>
+                  Relaxation Massage
+                </div>
+                <p class="text-sm text-gray-600 leading-snug">A soothing experience that melts away tension and promotes deep relaxation.</p>
+              </div>
+
+              <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
+                <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
+                  <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/></svg>
+                  Lymphatic Drainage
+                </div>
+                <p class="text-sm text-gray-600 leading-snug">Gentle movements to stimulate lymph flow, reduce swelling, and support detoxification.</p>
+              </div>
+
+              <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
+                <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
+                  <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/></svg>
+                  Head & Scalp Massage
+                </div>
+                <p class="text-sm text-gray-600 leading-snug">Relieves stress, tension, and improves circulation through gentle head massage.</p>
+              </div>
+
+              <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
+                <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
+                  <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/></svg>
+                  Hand & Foot Treatments
+                </div>
+                <p class="text-sm text-gray-600 leading-snug">Targeted massage and exfoliation for softer, more relaxed hands and feet.</p>
+              </div>
+
+              <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
+                <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
+                  <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/></svg>
+                  Back Massage
+                </div>
+                <p class="text-sm text-gray-600 leading-snug">Focused pressure therapy to relieve knots and tension in the upper and lower back.</p>
+              </div>
+
+              <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
+                <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
+                  <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/></svg>
+                  Full Body Massage
+                </div>
+                <p class="text-sm text-gray-600 leading-snug">Head-to-toe rejuvenation to ease stress, enhance circulation, and refresh your body.</p>
+              </div>
+
             </div>
           </div>
+
         </div>
 
         <!-- Brows & Lashes -->
@@ -240,17 +388,41 @@
             </span>
           </button>
           <div class="accordion-content">
-            <div class="px-5 pb-5 mt-3 grid grid-cols-1 md:grid-cols-2 gap-3">
-              <div class="rounded-lg bg-pink-50 shadow hover:shadow-md transition p-4 flex items-center font-semibold text-gray-800 hover:bg-pink-100 cursor-pointer">Eyebrow Shaping</div>
-              <div class="rounded-lg bg-pink-50 shadow hover:shadow-md transition p-4 flex items-center font-semibold text-gray-800 hover:bg-pink-100 cursor-pointer">Threading & Waxing</div>
-              <div class="rounded-lg bg-pink-50 shadow hover:shadow-md transition p-4 flex items-center font-semibold text-gray-800 hover:bg-pink-100 cursor-pointer">Lash Lifts & Tints</div>
-              <div class="rounded-lg bg-pink-50 shadow hover:shadow-md transition p-4 flex items-center font-semibold text-gray-800 hover:bg-pink-100 cursor-pointer">Brow Lamination</div>
-            </div>
-            <div class="bg-white/80 border-l-4 border-pink-300 mt-4 px-6 py-3 rounded-lg shadow-sm text-base text-gray-700 italic font-medium flex items-center gap-2">
-              <svg class="w-5 h-5 text-pink-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m2-4h.01M12 20.5A8.5 8.5 0 1 0 12 3.5a8.5 8.5 0 0 0 0 17zm0 0v.5m0-17v.5"/></svg>
-              Accentuate your features with gentle, precise brow and lash services.
+            <div class="px-5 pb-5 mt-3 grid grid-cols-1 md:grid-cols-2 gap-4">
+
+              <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
+                <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
+                  <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/>
+                  </svg>
+                  Eyebrow Shaping
+                </div>
+                <p class="text-sm text-gray-600 leading-snug">Expert brow design to define your natural shape and enhance your look.</p>
+              </div>
+
+              <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
+                <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
+                  <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/>
+                  </svg>
+                  Lash Lifts & Tints
+                </div>
+                <p class="text-sm text-gray-600 leading-snug">Enhance your natural lashes with a lifted curl and rich, lasting tint.</p>
+              </div>
+
+              <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
+                <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
+                  <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/>
+                  </svg>
+                  Brow Lamination
+                </div>
+                <p class="text-sm text-gray-600 leading-snug">Achieve fuller, fluffier brows with semi-permanent shaping and smoothing.</p>
+              </div>
+
             </div>
           </div>
+
         </div>
 
         <!-- Additional -->
@@ -267,16 +439,41 @@
             </span>
           </button>
           <div class="accordion-content">
-            <div class="px-5 pb-5 mt-3 grid grid-cols-1 md:grid-cols-2 gap-3">
-              <div class="rounded-lg bg-pink-50 shadow hover:shadow-md transition p-4 flex items-center font-semibold text-gray-800 hover:bg-pink-100 cursor-pointer">Waxing & Threading (Face/Body)</div>
-              <div class="rounded-lg bg-pink-50 shadow hover:shadow-md transition p-4 flex items-center font-semibold text-gray-800 hover:bg-pink-100 cursor-pointer">Specialized Masks & Peels</div>
-              <div class="rounded-lg bg-pink-50 shadow hover:shadow-md transition p-4 flex items-center font-semibold text-gray-800 hover:bg-pink-100 cursor-pointer">Custom Packages</div>
-            </div>
-            <div class="bg-white/80 border-l-4 border-pink-300 mt-4 px-6 py-3 rounded-lg shadow-sm text-base text-gray-700 italic font-medium flex items-center gap-2">
-              <svg class="w-5 h-5 text-pink-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m2-4h.01M12 20.5A8.5 8.5 0 1 0 12 3.5a8.5 8.5 0 0 0 0 17zm0 0v.5m0-17v.5"/></svg>
-              Ask us about tailored spa experiences and packages.
+            <div class="px-5 pb-5 mt-3 grid grid-cols-1 md:grid-cols-2 gap-4">
+
+              <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
+                <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
+                  <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/>
+                  </svg>
+                  Waxing (Face/Body)
+                </div>
+                <p class="text-sm text-gray-600 leading-snug">Gentle hair removal for smooth, radiant skin using premium wax techniques.</p>
+              </div>
+
+              <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
+                <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
+                  <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/>
+                  </svg>
+                  Specialized Masks & Peels
+                </div>
+                <p class="text-sm text-gray-600 leading-snug">Targeted treatments to detoxify, nourish, and brighten your skin.</p>
+              </div>
+
+              <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
+                <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
+                  <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/>
+                  </svg>
+                  Custom Packages
+                </div>
+                <p class="text-sm text-gray-600 leading-snug">Bundle your favorite treatments into personalized spa experiences.</p>
+              </div>
+
             </div>
           </div>
+
         </div>
 
       </div>
