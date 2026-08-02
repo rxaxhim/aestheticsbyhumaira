@@ -2,636 +2,678 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Treatments | Dr. Humaira's Laser & Advanced Aesthetics</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Dr. Humaira's Laser & Advanced Aesthetics in Mississauga offers expert laser hair removal, skin rejuvenation, and personalized aesthetic treatments. Book now!">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="icon" href="images/medspaLogo.png">
-  <style>
-    .accordion-content {
-      max-height: 0;
-      overflow: hidden;
-      opacity: 0;
-      transition: max-height 0.5s cubic-bezier(0.4,0,0.2,1), opacity 0.3s;
-    }
-    .accordion-item.open .accordion-content {
-      max-height: 2000px;
-      opacity: 1;
-      transition: max-height 0.7s cubic-bezier(0.4,0,0.2,1), opacity 0.3s;
-    }
-    .chevron {
-      transition: transform 0.4s cubic-bezier(0.4,0,0.2,1);
-    }
-    .accordion-item.open .chevron {
-      transform: rotate(90deg);
-    }
-  </style>
+  <title>Med Spa Treatments &amp; Prices Mississauga | Laser, Facials, PRP</title>
+  <meta name="description" content="Browse 80+ med spa treatments with prices in Mississauga: laser hair removal from $15, hydrafacials, microneedling, PRP, RF body contouring &amp; more. Book online.">
+  <link rel="canonical" href="https://www.aestheticsbyhumaira.ca/treatments.html">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="geo.region" content="CA-ON">
+  <meta name="geo.placename" content="Mississauga">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Dr. Humaira's Laser &amp; Advanced Aesthetics">
+  <meta property="og:title" content="Med Spa Treatments in Mississauga | Dr. Humaira's Laser &amp; Advanced Aesthetics">
+  <meta property="og:description" content="Laser hair removal, facials, PRP, microneedling, RF body contouring and more — 40+ treatments at our Mississauga med spa.">
+  <meta property="og:url" content="https://www.aestheticsbyhumaira.ca/treatments.html">
+  <meta property="og:image" content="https://www.aestheticsbyhumaira.ca/images/hero.jpg">
+  <meta property="og:locale" content="en_CA">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="images/medspaLogo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js" defer></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.aestheticsbyhumaira.ca/" },
+      { "@type": "ListItem", "position": 2, "name": "Treatments", "item": "https://www.aestheticsbyhumaira.ca/treatments.html" }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Med Spa Treatments in Mississauga",
+    "itemListElement": [
+      { "@type": "Service", "position": 1, "name": "Laser Hair Removal", "url": "https://www.aestheticsbyhumaira.ca/treatments.html#laser-hair-removal", "provider": { "@id": "https://www.aestheticsbyhumaira.ca/#business" }, "areaServed": "Mississauga, ON" },
+      { "@type": "Service", "position": 2, "name": "Facials & Hydrafacials", "url": "https://www.aestheticsbyhumaira.ca/treatments.html#facials", "provider": { "@id": "https://www.aestheticsbyhumaira.ca/#business" }, "areaServed": "Mississauga, ON" },
+      { "@type": "Service", "position": 3, "name": "Advanced Skin Treatments", "url": "https://www.aestheticsbyhumaira.ca/treatments.html#advanced-skin", "provider": { "@id": "https://www.aestheticsbyhumaira.ca/#business" }, "areaServed": "Mississauga, ON" },
+      { "@type": "Service", "position": 4, "name": "Platelet-Rich Plasma (PRP) Treatments", "url": "https://www.aestheticsbyhumaira.ca/treatments.html#prp", "provider": { "@id": "https://www.aestheticsbyhumaira.ca/#business" }, "areaServed": "Mississauga, ON" },
+      { "@type": "Service", "position": 5, "name": "RF Body Contouring", "url": "https://www.aestheticsbyhumaira.ca/treatments.html#body-contouring", "provider": { "@id": "https://www.aestheticsbyhumaira.ca/#business" }, "areaServed": "Mississauga, ON" },
+      { "@type": "Service", "position": 6, "name": "Massage & Body Treatments", "url": "https://www.aestheticsbyhumaira.ca/treatments.html#massage", "provider": { "@id": "https://www.aestheticsbyhumaira.ca/#business" }, "areaServed": "Mississauga, ON" },
+      { "@type": "Service", "position": 7, "name": "Brows & Lashes", "url": "https://www.aestheticsbyhumaira.ca/treatments.html#brows-lashes", "provider": { "@id": "https://www.aestheticsbyhumaira.ca/#business" }, "areaServed": "Mississauga, ON" },
+      { "@type": "Service", "position": 8, "name": "Waxing — Face & Body", "url": "https://www.aestheticsbyhumaira.ca/treatments.html#spa-services", "provider": { "@id": "https://www.aestheticsbyhumaira.ca/#business" }, "areaServed": "Mississauga, ON" }
+    ]
+  }
+  </script>
 </head>
-<body class="bg-white text-gray-900 font-sans flex flex-col min-h-screen">
-  <!-- Announcement bar + Nav -->
-  <div class="bg-pink-100 text-center py-2 text-pink-700 text-sm font-semibold tracking-wide">
-    CURRENT PROMOTIONS: Fall Glow Special: Save 20% on ALL Laser & Facials November Only!
-  </div>
-  <nav class="bg-white shadow-sm w-full z-40 top-0 transition-all duration-300">
-    <div class="max-w-7xl mx-auto px-4 py-3 flex flex-col lg:flex-row lg:items-center lg:justify-between">
-      <div class="flex flex-col lg:flex-row items-center gap-3 w-full">
-        <img src="images/medspaLogo.png"
-            alt="Dr Humaira's Laser & Advanced Aesthetics Mississauga Churchill Meadows Logo"
-            class="w-24 h-24 sm:w-24 sm:h-24 lg:w-28 lg:h-28 object-cover rounded-full drop-shadow-lg mx-auto lg:mx-0 transition-all duration-300">
-        <div class="flex flex-col lg:flex-row items-center w-full justify-center relative">
-          <div class="flex flex-col items-center lg:items-end text-center lg:text-right relative">
-            <span class="font-extrabold text-pink-700 text-2xl md:text-3xl lg:text-4xl block leading-none"
-                  style="font-size:clamp(1.5rem,4vw,2.8rem);">
-              Dr. Humaira's Laser
-            </span>
-            <div class="flex items-center justify-center lg:justify-end">
-              <span class="font-extrabold text-pink-700 text-2xl md:text-3xl lg:text-4xl mx-2 lg:hidden"
-                    style="font-size:clamp(1.5rem,4vw,2.8rem);">
-                &
-              </span>
-              <span class="font-extrabold text-pink-700 text-2xl md:text-3xl lg:text-4xl block leading-none"
-                    style="font-size:clamp(1.5rem,4vw,2.8rem);">
-                Advanced Aesthetics
-              </span>
-            </div>
-            <span class="hidden lg:flex font-extrabold text-pink-700 text-4xl absolute top-1/2 -right-16"
-                  style="transform:translateY(-50%);font-size:2.8rem;">
-              &
-            </span>
-          </div>
-        </div>
-      </div>
-      <div class="flex flex-wrap justify-center gap-6 mt-5 lg:mt-0 text-lg w-full lg:w-auto">
-        <a href="index.html" class="hover:text-pink-700 transition-colors duration-200">Home</a>
-        <a href="about.html" class="hover:text-pink-600 transition-colors duration-200">About</a>
-        <a href="treatments.html" class="text-pink-700 font-semibold underline underline-offset-8 transition-colors duration-200">Treatments</a>
-        <a href="contact.html" class="hover:text-pink-600 transition-colors duration-200">Contact</a>
-        <span class="hidden md:inline text-gray-500 text-base ml-2 select-none whitespace-nowrap">Call/Text: (416) 726-2840</span>
-      </div>
-    </div>
-  </nav>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
-    <!-- HERO Section -->
-  <div class="w-full bg-gradient-to-r from-pink-50 to-white border-b border-pink-100 py-10 mb-4">
-    <div class="max-w-4xl mx-auto text-center px-4">
-      <h1 class="text-3xl md:text-4xl font-bold text-pink-700 mb-2">Our Treatments</h1>
-      <p class="text-lg text-gray-700">From laser hair removal and anti-aging facials to skin rejuvenation and relaxing body treatments, we offer a full range of advanced, personalized services for all skin types and beauty goals.<br><br>
-         Our treatments are designed to deliver visible, lasting results in a safe, welcoming environment. Explore some of our most popular medical spa services in Mississauga below.</p>
-    </div>
+  <div class="promo-bar" role="region" aria-label="Current promotion">
+    <strong>Limited-time offer:</strong> Save 20% on all laser &amp; facial treatments
+    <a href="#" data-book>Book now</a>
   </div>
 
-  <main class="flex-grow flex flex-col">
-    <!-- Treatments Section -->
-    <section class="max-w-3xl w-full mx-auto mt-8 px-2 md:px-0">
-
-      <div class="space-y-4">
-        <!-- Laser Hair Removal -->
-        <div class="accordion-item rounded-xl bg-white/90 shadow border border-pink-100 group transition">
-          <button type="button" class="w-full flex items-center px-5 py-4 text-lg md:text-xl font-bold text-pink-700 hover:bg-pink-50 rounded-xl select-none transition-all focus:outline-none"
-            aria-expanded="false">
-            <span class="mr-4 h-6 w-1.5 bg-pink-300 rounded-full"></span>
-            Laser Hair Removal
-            <span class="ml-auto chevron">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
-                class="w-6 h-6 text-pink-400 group-hover:text-pink-600">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-              </svg>
-            </span>
-          </button>
-          <div class="accordion-content">
-            <div class="px-5 pb-5 mt-3 grid grid-cols-1 md:grid-cols-2 gap-3">
-              <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
-                <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
-                  <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/></svg>
-                  Full Body Laser
-                </div>
-                <p class="text-sm text-gray-600 leading-snug">Comprehensive treatment for full-body smoothness using cutting-edge laser tech.</p>
-              </div>
-              <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
-                <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
-                  <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/></svg>
-                  Face & Neck Laser
-                </div>
-                <p class="text-sm text-gray-600 leading-snug">Gentle laser care for delicate face and neck areas to reduce unwanted hair.</p>
-              </div>
-              <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
-                <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
-                  <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/></svg>
-                  Legs, Arms, Underarms, Bikini
-                </div>
-                <p class="text-sm text-gray-600 leading-snug">Customizable zones for hair-free confidence with long-lasting results.</p>
-              </div>
-              <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
-                <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
-                  <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/></svg>
-                  Back & Chest
-                </div>
-                <p class="text-sm text-gray-600 leading-snug">Effective solution for larger areas with coarse or dense hair.</p>
-              </div>
-              <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
-                <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
-                  <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/></svg>
-                  Touch-Ups & Packages
-                </div>
-                <p class="text-sm text-gray-600 leading-snug">Flexible sessions to maintain smoothness or save on bundled treatments.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Classic Facials -->
-        <div class="accordion-item rounded-xl bg-white/90 shadow border border-pink-100 group transition">
-          <button type="button" class="w-full flex items-center px-5 py-4 text-lg md:text-xl font-bold text-pink-700 hover:bg-pink-50 rounded-xl select-none transition-all focus:outline-none"
-            aria-expanded="false">
-            <span class="mr-4 h-6 w-1.5 bg-pink-300 rounded-full"></span>
-            Classic Facials
-            <span class="ml-auto chevron">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
-                class="w-6 h-6 text-pink-400 group-hover:text-pink-600">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-              </svg>
-            </span>
-          </button>
-          <div class="accordion-content">
-            <div class="px-5 pb-5 mt-3 grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
-                <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
-                  <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/></svg>
-                  Hollywood/Carbon Laser Facial
-                </div>
-                <p class="text-sm text-gray-600 leading-snug">Celebrity-favorite deep exfoliation and radiant skin.</p>
-              </div>
-              <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
-                <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
-                  <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/></svg>
-                  Signature Glow Facial
-                </div>
-                <p class="text-sm text-gray-600 leading-snug">Revitalizes with hydration and a luminous finish.</p>
-              </div>
-              <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
-                <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
-                  <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/></svg>
-                  Hydrating Facial
-                </div>
-                <p class="text-sm text-gray-600 leading-snug">Infuses deep moisture for dehydrated skin.</p>
-              </div>
-              <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
-                <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
-                  <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/></svg>
-                  Acne & Deep Cleanse
-                </div>
-                <p class="text-sm text-gray-600 leading-snug">Cleans pores and calms irritation for clearer skin.</p>
-              </div>
-              <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
-                <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
-                  <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/></svg>
-                  Anti-Aging Facial
-                </div>
-                <p class="text-sm text-gray-600 leading-snug">Targets lines and boosts collagen for firmer skin.</p>
-              </div>
-              <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
-                <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
-                  <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/></svg>
-                  Teen Facials
-                </div>
-                <p class="text-sm text-gray-600 leading-snug">Gentle, age-appropriate care for young skin.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Advanced Skin Treatments -->
-        <div class="accordion-item rounded-xl bg-white/90 shadow border border-pink-100 group transition">
-          <button type="button" class="w-full flex items-center px-5 py-4 text-lg md:text-xl font-bold text-pink-700 hover:bg-pink-50 rounded-xl select-none transition-all focus:outline-none"
-            aria-expanded="false">
-            <span class="mr-4 h-6 w-1.5 bg-pink-300 rounded-full"></span>
-            Advanced Skin Treatments
-            <span class="ml-auto chevron">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
-                class="w-6 h-6 text-pink-400 group-hover:text-pink-600">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-              </svg>
-            </span>
-          </button>
-          <div class="accordion-content">
-            <div class="px-5 pb-5 mt-3 grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
-                <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
-                  <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/></svg>
-                  Microneedling
-                </div>
-                <p class="text-sm text-gray-600 leading-snug">Stimulates collagen to reduce scars and texture.</p>
-              </div>
-              <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
-                <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
-                  <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/></svg>
-                  RF Skin Tightening
-                </div>
-                <p class="text-sm text-gray-600 leading-snug">Firms sagging skin and contours the face.</p>
-              </div>
-              <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
-                <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
-                  <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/></svg>
-                  Photo Facials
-                </div>
-                <p class="text-sm text-gray-600 leading-snug">Light therapy for pigmentation and clarity.</p>
-              </div>
-              <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
-                <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
-                  <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/></svg>
-                  Sun & Age Spot Removal
-                </div>
-                <p class="text-sm text-gray-600 leading-snug">Targets sun spots and uneven skin tone.</p>
-              </div>
-              <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
-                <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
-                  <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/></svg>
-                  Scar & Stretch Mark Treatments
-                </div>
-                <p class="text-sm text-gray-600 leading-snug">Minimizes scars and stretch marks.</p>
-              </div>
-              <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
-                <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
-                  <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/></svg>
-                  Skin Brightening
-                </div>
-                <p class="text-sm text-gray-600 leading-snug">Restores glow and evens skin tone.</p>
-              </div>
-              <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
-                <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
-                  <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/></svg>
-                  Dermaplaning
-                </div>
-                <p class="text-sm text-gray-600 leading-snug">Removes peach fuzz and dead skin for a smooth finish.</p>
-              </div>
-              <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
-                <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
-                  <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/></svg>
-                  Microdermabrasion
-                </div>
-                <p class="text-sm text-gray-600 leading-snug">Gently exfoliates to refine pores, texture, and tone.</p>
-              </div>
-              <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
-                <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
-                  <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/></svg>
-                  Chemical Peels
-                </div>
-                <p class="text-sm text-gray-600 leading-snug">Brightens, resurfaces, and treats pigmentation.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Platelet-Rich Plasma (PRP) -->
-        <div class="accordion-item rounded-xl bg-white/90 shadow border border-pink-100 group transition">
-          <button type="button" class="w-full flex items-center px-5 py-4 text-lg md:text-xl font-bold text-pink-700 hover:bg-pink-50 rounded-xl select-none transition-all focus:outline-none" aria-expanded="false">
-            <span class="mr-4 h-6 w-1.5 bg-pink-300 rounded-full"></span>
-            Platelet-Rich Plasma (PRP)
-            <span class="ml-auto chevron">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 text-pink-400 group-hover:text-pink-600">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-              </svg>
-            </span>
-          </button>
-          <div class="accordion-content">
-            <div class="px-5 pb-5 mt-3 grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
-                <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
-                  <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/></svg>
-                  Vampire Facial
-                </div>
-                <p class="text-sm text-gray-600 leading-snug">Rejuvenates skin using your own plasma.</p>
-              </div>
-              <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
-                <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
-                  <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/></svg>
-                  Vampire Facial + Exosome
-                </div>
-                <p class="text-sm text-gray-600 leading-snug">Enhanced facial with regenerative exosomes.</p>
-              </div>
-              <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
-                <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
-                  <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/></svg>
-                  Neck Rejuvenation with PRP
-                </div>
-                <p class="text-sm text-gray-600 leading-snug">Restores youthful neck appearance.</p>
-              </div>
-              <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
-                <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
-                  <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/></svg>
-                  Neck PRP + Exosome
-                </div>
-                <p class="text-sm text-gray-600 leading-snug">Neck treatment with PRP and exosomes.</p>
-              </div>
-              <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
-                <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
-                  <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/></svg>
-                  PRP Hair Restoration
-                </div>
-                <p class="text-sm text-gray-600 leading-snug">Stimulates natural hair growth.</p>
-              </div>
-              <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
-                <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
-                  <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/></svg>
-                  PRP + Exosome Hair Regeneration
-                </div>
-                <p class="text-sm text-gray-600 leading-snug">Intensive hair regrowth solution.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- RF Body Contouring -->
-        <div class="accordion-item rounded-xl bg-white/90 shadow border border-pink-100 group transition">
-          <button type="button" class="w-full flex items-center px-5 py-4 text-lg md:text-xl font-bold text-pink-700 hover:bg-pink-50 rounded-xl select-none transition-all focus:outline-none" aria-expanded="false">
-            <span class="mr-4 h-6 w-1.5 bg-pink-300 rounded-full"></span>
-            RF Body Contouring
-            <span class="ml-auto chevron">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 text-pink-400 group-hover:text-pink-600">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-              </svg>
-            </span>
-          </button>
-          <div class="accordion-content">
-            <div class="px-5 pb-5 mt-3 grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
-                <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
-                  <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/></svg>
-                  RF Skin Tightening – Thighs
-                </div>
-                <p class="text-sm text-gray-600 leading-snug">Firms and smooths thigh skin.</p>
-              </div>
-              <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
-                <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
-                  <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/></svg>
-                  RF Skin Tightening – Arms
-                </div>
-                <p class="text-sm text-gray-600 leading-snug">Tightens and contours arm skin.</p>
-              </div>
-              <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
-                <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
-                  <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/></svg>
-                  RF Skin Tightening – Abdomen
-                </div>
-                <p class="text-sm text-gray-600 leading-snug">Firms and tones abdominal area.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Massages & Relaxation -->
-        <div class="accordion-item rounded-xl bg-white/90 shadow border border-pink-100 group transition">
-          <button type="button" class="w-full flex items-center px-5 py-4 text-lg md:text-xl font-bold text-pink-700 hover:bg-pink-50 rounded-xl select-none transition-all focus:outline-none"
-            aria-expanded="false">
-            <span class="mr-4 h-6 w-1.5 bg-pink-300 rounded-full"></span>
-            Massages & Relaxation
-            <span class="ml-auto chevron">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
-                class="w-6 h-6 text-pink-400 group-hover:text-pink-600">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-              </svg>
-            </span>
-          </button>
-          <div class="accordion-content">
-            <div class="px-5 pb-5 mt-3 grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
-                <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
-                  <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/></svg>
-                  Relaxation Massage
-                </div>
-                <p class="text-sm text-gray-600 leading-snug">Soothing massage to melt away tension.</p>
-              </div>
-              <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
-                <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
-                  <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/></svg>
-                  Lymphatic Drainage
-                </div>
-                <p class="text-sm text-gray-600 leading-snug">Gentle technique to reduce swelling and detox.</p>
-              </div>
-              <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
-                <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
-                  <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/></svg>
-                  Head & Scalp Massage
-                </div>
-                <p class="text-sm text-gray-600 leading-snug">Relieves stress and boosts circulation.</p>
-              </div>
-              <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
-                <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
-                  <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/></svg>
-                  Hand & Foot Treatments
-                </div>
-                <p class="text-sm text-gray-600 leading-snug">Massage and exfoliation for hands and feet.</p>
-              </div>
-              <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
-                <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
-                  <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/></svg>
-                  Back Massage
-                </div>
-                <p class="text-sm text-gray-600 leading-snug">Focused therapy to relieve back tension.</p>
-              </div>
-              <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
-                <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
-                  <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/></svg>
-                  Full Body Massage
-                </div>
-                <p class="text-sm text-gray-600 leading-snug">Head-to-toe rejuvenation for body and mind.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Brows & Lashes -->
-        <div class="accordion-item rounded-xl bg-white/90 shadow border border-pink-100 group transition">
-          <button type="button" class="w-full flex items-center px-5 py-4 text-lg md:text-xl font-bold text-pink-700 hover:bg-pink-50 rounded-xl select-none transition-all focus:outline-none"
-            aria-expanded="false">
-            <span class="mr-4 h-6 w-1.5 bg-pink-300 rounded-full"></span>
-            Brows & Lashes
-            <span class="ml-auto chevron">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
-                class="w-6 h-6 text-pink-400 group-hover:text-pink-600">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-              </svg>
-            </span>
-          </button>
-          <div class="accordion-content">
-            <div class="px-5 pb-5 mt-3 grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
-                <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
-                  <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/></svg>
-                  Eyebrow Shaping
-                </div>
-                <p class="text-sm text-gray-600 leading-snug">Expert brow design for your best shape.</p>
-              </div>
-              <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
-                <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
-                  <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/></svg>
-                  Lash Lifts & Tints
-                </div>
-                <p class="text-sm text-gray-600 leading-snug">Curl and tint for longer-looking lashes.</p>
-              </div>
-              <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
-                <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
-                  <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/></svg>
-                  Brow Lamination
-                </div>
-                <p class="text-sm text-gray-600 leading-snug">Fluffy, fuller brows with semi-permanent hold.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Additional Spa Services -->
-        <div class="accordion-item rounded-xl bg-white/90 shadow border border-pink-100 group transition">
-          <button type="button" class="w-full flex items-center px-5 py-4 text-lg md:text-xl font-bold text-pink-700 hover:bg-pink-50 rounded-xl select-none transition-all focus:outline-none"
-            aria-expanded="false">
-            <span class="mr-4 h-6 w-1.5 bg-pink-300 rounded-full"></span>
-            Additional Spa Services
-            <span class="ml-auto chevron">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
-                class="w-6 h-6 text-pink-400 group-hover:text-pink-600">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-              </svg>
-            </span>
-          </button>
-          <div class="accordion-content">
-            <div class="px-5 pb-5 mt-3 grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
-                <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
-                  <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/></svg>
-                  Waxing (Face/Body)
-                </div>
-                <p class="text-sm text-gray-600 leading-snug">Gentle, premium wax for smooth, radiant skin.</p>
-              </div>
-              <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
-                <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
-                  <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/></svg>
-                  Specialized Masks & Peels
-                </div>
-                <p class="text-sm text-gray-600 leading-snug">Targeted treatments to nourish and brighten.</p>
-              </div>
-              <div class="rounded-xl bg-white shadow hover:shadow-md transition p-4 flex flex-col gap-2 border border-pink-100">
-                <div class="flex items-center gap-2 text-pink-700 font-semibold text-lg">
-                  <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2V17h2v-.5zm0-8h-2v6h2v-6z"/></svg>
-                  Custom Packages
-                </div>
-                <p class="text-sm text-gray-600 leading-snug">Bundle your favorite treatments your way.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Booking Button Section: Place this after your treatments/cards section -->
-      <div class="flex justify-center mt-8 mb-8">
-        <a
-          id="book-now-static"
-          href="#"
-          class="w-full max-w-md px-8 py-3 bg-pink-600 text-white rounded-full font-bold text-xl shadow-lg hover:bg-pink-700 focus:bg-pink-700 transition-all duration-200 text-center"
-        >
-          Book Your Appointment
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html" aria-label="Dr. Humaira's Laser and Advanced Aesthetics — home">
+        <img src="images/medspaLogo.png" alt="Dr. Humaira's Laser &amp; Advanced Aesthetics logo" width="54" height="54">
+        <span class="brand__name">Dr. Humaira's<span class="brand__full"> Laser &amp; Aesthetics</span>
+          <span class="brand__tag">Med Spa · Mississauga</span>
+        </span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation menu">
+        <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="display:none"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="treatments.html" aria-current="page">Treatments</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+        <a class="header-phone" href="tel:+14167262840">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92V19a2 2 0 0 1-2.18 2A19.78 19.78 0 0 1 3 5.18 2 2 0 0 1 5 3h2.09a2 2 0 0 1 2 1.72c.12.81.28 1.61.5 2.38a2 2 0 0 1-.45 2.11l-.27.27a16 16 0 0 0 6.29 6.29l.27-.27a2 2 0 0 1 2.11-.45c.77.22 1.57.38 2.38.5A2 2 0 0 1 22 16.92z"/></svg>
+          (416) 726-2840
         </a>
-      </div>
+        <a class="btn btn--primary" href="#" data-book>Book Now</a>
+      </nav>
+    </div>
+  </header>
 
-      <!-- Setmore Booking Modal -->
-      <div id="setmore-modal"
-          class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50"
-          style="display:none;">
-        <div class="relative bg-white rounded-xl shadow-lg w-[90vw] max-w-lg h-[80vh] flex flex-col">
-          <!-- Close Button -->
-          <button
-            onclick="closeSetmoreModal()"
-            class="absolute top-4 right-4 bg-white rounded-full w-10 h-10 flex items-center justify-center shadow hover:bg-gray-100 transition"
-            aria-label="Close booking modal"
-          >
-            <!-- SVG Close Icon -->
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <line x1="18" y1="6" x2="6" y2="18" stroke-linecap="round"/>
-              <line x1="6" y1="6" x2="18" y2="18" stroke-linecap="round"/>
-            </svg>
-          </button>
-          <!-- Booking Iframe will be injected here -->
-          <div id="setmore-iframe-container" class="flex-grow"></div>
+  <main id="main">
+    <!-- Page hero -->
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow eyebrow--center rise">Treatment Menu</p>
+        <h1>Med Spa Treatments &amp; Pricing in Mississauga</h1>
+        <p>From laser hair removal and hydrafacials to PRP rejuvenation and body contouring — over 80 personalized treatments with transparent pricing. Tap any treatment to book it instantly online.</p>
+        <div class="treat-search mt-2" role="search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          <label class="visually-hidden" for="treatment-search">Search treatments</label>
+          <input type="search" id="treatment-search" placeholder="Search treatments — e.g. facial, laser, PRP…" autocomplete="off">
         </div>
       </div>
+    </section>
 
-      <!-- Script for Button Action (Lazy-load iframe) -->
-      <script>
-        function closeSetmoreModal() {
-          document.getElementById('setmore-modal').style.display = 'none';
-          // Remove the iframe to save memory and avoid background load
-          var container = document.getElementById('setmore-iframe-container');
-          container.innerHTML = '';
-        }
-        document.getElementById('book-now-static').addEventListener('click', function(e) {
-          e.preventDefault();
-          var container = document.getElementById('setmore-iframe-container');
-          if (!container.querySelector('iframe')) {
-            var iframe = document.createElement('iframe');
-            iframe.src = "https://aestheticsbyhumaira.setmore.com";
-            iframe.className = "w-full h-full border-0 rounded-b-xl";
-            container.appendChild(iframe);
-          }
-          document.getElementById('setmore-modal').style.display = 'flex';
-        });
-      </script>
+    <!-- Category chips -->
+    <nav class="treat-nav" aria-label="Treatment categories">
+      <div class="container treat-nav__inner">
+        <a class="chip active" href="#laser-hair-removal">Laser Hair Removal</a>
+        <a class="chip" href="#facials">Facials</a>
+        <a class="chip" href="#advanced-skin">Advanced Skin</a>
+        <a class="chip" href="#prp">PRP</a>
+        <a class="chip" href="#body-contouring">Body Contouring</a>
+        <a class="chip" href="#massage">Massage</a>
+        <a class="chip" href="#brows-lashes">Brows &amp; Lashes</a>
+        <a class="chip" href="#spa-services">Waxing</a>
+      </div>
+    </nav>
+
+    <div class="container">
+      <p class="no-results" id="no-results">No treatments match your search. Try a different keyword, or <a href="https://wa.me/14167262840" target="_blank" rel="noopener">ask us on WhatsApp</a> — we likely offer it!</p>
+
+      <!-- Laser Hair Removal -->
+      <section class="treat-section" id="laser-hair-removal" aria-labelledby="laser-hair-removal-title">
+        <div class="treat-section__head reveal">
+          <div>
+            <p class="eyebrow">01 — Signature Service</p>
+            <h2 id="laser-hair-removal-title">Laser Hair Removal</h2>
+          </div>
+          <p>Long-lasting smoothness with advanced laser technology, safe for all skin types and tones. Click any area to book instantly.</p>
+        </div>
+        <div class="menu-grid">
+          <a class="menu-item reveal" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=02a8839a-b7d0-416f-98fb-9c2c37de5985&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Laser Consultation — free">
+            <span class="menu-item__name">Laser Consultation<span class="menu-item__dur">15 min</span><span class="menu-item__desc">Patch test included — we assess your skin tone and hair type before you commit to anything.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price menu-item__price--free">Free</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal d1" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=0e9838d8-dc78-4f0d-8fdf-c7d9c562640f&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Full Body Laser — $250 CAD">
+            <span class="menu-item__name">Full Body Laser<span class="menu-item__dur">1 hr 30 min</span><span class="menu-item__desc">Every area in one session. The most popular way to quit shaving for good.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$250</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal d2" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=a99c0b76-8ff5-421e-a1fe-1bd550980a99&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Upper Body Laser — $180 CAD">
+            <span class="menu-item__name">Upper Body Laser<span class="menu-item__dur">1 hr</span><span class="menu-item__desc">Face, arms, underarms, chest and stomach covered in a single appointment.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$180</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal d3" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=65cff10e-fcf3-4d73-b898-ed5b85f7ffa3&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Full Face Laser — $80 CAD">
+            <span class="menu-item__name">Full Face Laser<span class="menu-item__dur">25 min</span><span class="menu-item__desc">Softens hair on the cheeks, chin, jawline and upper lip without irritating the skin.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$80</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal d4" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=22f4601b-8587-4f5f-ac3e-83209bef37cd&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Full Legs Laser — $140 CAD">
+            <span class="menu-item__name">Full Legs Laser<span class="menu-item__dur">45 min</span><span class="menu-item__desc">Hip to ankle. Book a course before summer and forget the razor.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$140</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal d5" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=dc316ebe-3905-4631-bd7a-4569eba7a2a3&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Half Legs Laser — $90 CAD">
+            <span class="menu-item__name">Half Legs Laser<span class="menu-item__dur">25 min</span><span class="menu-item__desc">Knee to ankle — the quick option if your lower legs get most of the growth.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$90</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=30b4a52e-52c6-4dc4-902f-e2a2ab672f09&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Arms Laser — $80 CAD">
+            <span class="menu-item__name">Arms Laser<span class="menu-item__dur">25 min</span><span class="menu-item__desc">Full arms, shoulder to wrist. No more mid-week touch-ups.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$80</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal d1" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=1e5bfe33-ba90-432b-81c8-ae85976e49c6&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Underarms Laser — $45 CAD">
+            <span class="menu-item__name">Underarms Laser<span class="menu-item__dur">15 min</span><span class="menu-item__desc">Fifteen minutes, in and out. The area most clients start with.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$45</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal d2" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=f2e877bc-8f2b-4d23-8c07-443ad359b444&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Brazilian Laser — $80 CAD">
+            <span class="menu-item__name">Brazilian Laser<span class="menu-item__dur">25 min</span><span class="menu-item__desc">Smooth and low-maintenance, with far fewer ingrown hairs than waxing.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$80</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal d3" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=e1504ed7-63dc-49d3-b17d-aea2f458be04&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Bikini Line Laser — $30 CAD">
+            <span class="menu-item__name">Bikini Line Laser<span class="menu-item__dur">15 min</span><span class="menu-item__desc">Just the edges — tidy, comfortable and swimsuit-ready.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$30</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal d4" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=d51eb4d7-a24e-4f89-83ae-c1d4f0bf61d2&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Full Back Laser — $75 CAD">
+            <span class="menu-item__name">Full Back Laser<span class="menu-item__dur">25 min</span><span class="menu-item__desc">Even coverage for an area that is impossible to reach yourself.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$75</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal d5" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=2bfde942-a042-497d-85c0-ad985b3192a6&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Half Back Laser — $30 CAD">
+            <span class="menu-item__name">Half Back Laser<span class="menu-item__dur">15 min</span><span class="menu-item__desc">Upper or lower back only — quick and affordable.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$30</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=fea75230-8ee2-406f-affe-8880eaf2d5c8&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Chest Laser — $35 CAD">
+            <span class="menu-item__name">Chest Laser<span class="menu-item__dur">15 min</span><span class="menu-item__desc">Gentle settings for sensitive chest skin.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$35</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal d1" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=131e7222-d1f4-4cf0-97f6-14e086e36a88&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Stomach Laser — $35 CAD">
+            <span class="menu-item__name">Stomach Laser<span class="menu-item__dur">20 min</span><span class="menu-item__desc">Clears the midline and belly area in about twenty minutes.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$35</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal d2" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=208d7848-f547-4b15-bec2-a17f6bf9bfb5&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Neck Laser — $45 CAD">
+            <span class="menu-item__name">Neck Laser<span class="menu-item__dur">20 min</span><span class="menu-item__desc">Front or back of the neck — a common add-on to face sessions.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$45</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal d3" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=0cac5b60-9633-42d5-bf8d-47af6600b0c9&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Jawline Laser — $55 CAD">
+            <span class="menu-item__name">Jawline Laser<span class="menu-item__dur">20 min</span><span class="menu-item__desc">Targets coarse jawline growth, a frequent concern with PCOS.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$55</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal d4" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=fb2c33fa-5923-408f-8acc-6ffa730eb54c&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Cheeks Laser — $45 CAD">
+            <span class="menu-item__name">Cheeks Laser<span class="menu-item__dur">15 min</span><span class="menu-item__desc">Evens out cheek and sideburn-area growth for a cleaner look.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$45</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal d5" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=538d04f0-901e-40f1-bbec-fff2ce176168&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Sideburns Laser — $35 CAD">
+            <span class="menu-item__name">Sideburns Laser<span class="menu-item__dur">15 min</span><span class="menu-item__desc">Frames the face without razors or thread burn.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$35</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=4586fdce-b315-487c-9389-556c432f463e&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Chin Laser — $25 CAD">
+            <span class="menu-item__name">Chin Laser<span class="menu-item__dur">10 min</span><span class="menu-item__desc">Ten minutes for one of the most stubborn spots.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$25</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal d1" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=e98156ab-9b04-4f04-a1fa-e7c25f0d58be&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Upper Lip Laser — $15 CAD">
+            <span class="menu-item__name">Upper Lip Laser<span class="menu-item__dur">10 min</span><span class="menu-item__desc">Our quickest session — most clients pair it with chin or full face.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$15</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal d2" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=ed0af51b-2b73-4025-a021-9da3a064a537&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Forehead Laser — $20 CAD">
+            <span class="menu-item__name">Forehead Laser<span class="menu-item__dur">10 min</span><span class="menu-item__desc">Tidies the hairline and the space between the brows.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$20</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+        </div>
+      </section>
+
+      <!-- Facials & Hydrafacials -->
+      <section class="treat-section" id="facials" aria-labelledby="facials-title">
+        <div class="treat-section__head reveal">
+          <div>
+            <p class="eyebrow">02 — Glow Rituals</p>
+            <h2 id="facials-title">Facials &amp; Hydrafacials</h2>
+          </div>
+          <p>From express glow-ups to the celebrity-favourite Carbon Laser Facial — restorative rituals customized to your skin.</p>
+        </div>
+        <div class="menu-grid">
+          <a class="menu-item reveal" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=dfa2b45d-f8a6-4166-bca7-fdf6fe01bc64&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Facial Consultation — free">
+            <span class="menu-item__name">Facial Consultation<span class="menu-item__dur">15 min</span><span class="menu-item__desc">Not sure which facial fits? We look at your skin and point you in the right direction.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price menu-item__price--free">Free</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal d1" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=2d7c52c8-4dc5-4fea-b40d-6e8af9b03cfa&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Carbon Laser Facial (Hollywood) — $200 CAD">
+            <span class="menu-item__name">Carbon Laser Facial (Hollywood)<span class="menu-item__dur">1 hr</span><span class="menu-item__desc">A carbon mask plus laser to deep-clean pores and rein in oil. The glow lasts for weeks.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$200</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal d2" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=0ff82313-0ad9-45d1-857f-23c496251ddf%7C40c67756-8d3d-4f3f-9cd1-704600093486&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Bridal Glow Facial — $250 CAD">
+            <span class="menu-item__name">Bridal Glow Facial<span class="menu-item__dur">2 hr</span><span class="menu-item__desc">Two hours of prep so your skin photographs beautifully on the big day.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$250</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal d3" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=35c5e92a-f3dd-40f2-b17e-436c4b5de2a7&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Hollywood Glow Facial — $160 CAD">
+            <span class="menu-item__name">Hollywood Glow Facial<span class="menu-item__dur">1 hr</span><span class="menu-item__desc">Red-carpet radiance without the laser — brightening, massage and a rich mask.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$160</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal d4" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=b5188af4-c4d5-4072-8d3b-eb8d395313fd&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Brightening Facial — $150 CAD">
+            <span class="menu-item__name">Brightening Facial<span class="menu-item__dur">1 hr 30 min</span><span class="menu-item__desc">Targets dullness and uneven tone; a favourite for tired, city-stressed skin.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$150</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal d5" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=d2b145f3-8193-4747-9266-9dee0e9d6c63&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book BB Glow Facial — $140 CAD">
+            <span class="menu-item__name">BB Glow Facial<span class="menu-item__dur">1 hr</span><span class="menu-item__desc">A semi-permanent tinted serum that evens tone — like light foundation you wake up with.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$140</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=351079aa-2dc5-478f-b915-ee70580dd001&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Signature Hydrafacial — $110 CAD">
+            <span class="menu-item__name">Signature Hydrafacial<span class="menu-item__dur">45 min</span><span class="menu-item__desc">Cleanse, extract and hydrate in 45 minutes. Zero downtime, instant glow.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$110</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal d1" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=ff5e5b13-b3f6-4de4-a918-35ab9979f141&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Deluxe Hydrafacial — $140 CAD">
+            <span class="menu-item__name">Deluxe Hydrafacial<span class="menu-item__dur">1 hr</span><span class="menu-item__desc">The Signature plus a booster serum and LED light matched to your skin concern.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$140</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal d2" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=d1990ea3-2e15-4b58-b469-958aac82fc8d&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Platinum Hydrafacial — $160 CAD">
+            <span class="menu-item__name">Platinum Hydrafacial<span class="menu-item__dur">1 hr 15 min</span><span class="menu-item__desc">Our fullest hydrafacial: lymphatic massage, boosters and LED from start to finish.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$160</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal d3" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=3bdd5a2a-d36a-4223-a134-101b879cfec4&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Hydrafacial Clear — $150 CAD">
+            <span class="menu-item__name">Hydrafacial Clear<span class="menu-item__dur">1 hr</span><span class="menu-item__desc">A hydrafacial tuned for congested, breakout-prone skin.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$150</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal d4" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=842f4036-a52f-4b27-879a-64e70c845e1e&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Hydra Dermabrasion — $75 CAD">
+            <span class="menu-item__name">Hydra Dermabrasion<span class="menu-item__dur">45 min</span><span class="menu-item__desc">Water-based exfoliation that polishes without the scratch of crystals.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$75</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal d5" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=f31fc9ee-8545-4252-8312-5b4be63b4913&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Custom Facial — $90 CAD">
+            <span class="menu-item__name">Custom Facial<span class="menu-item__dur">1 hr</span><span class="menu-item__desc">Built around whatever your skin is doing that week.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$90</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=b0c892a4-d5e9-477d-a68b-16e2f00554e8&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Basic Spa Facial — $90 CAD">
+            <span class="menu-item__name">Basic Spa Facial<span class="menu-item__dur">45 min</span><span class="menu-item__desc">A classic cleanse, steam and mask when your skin just needs a reset.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$90</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal d1" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=803dec37-a2db-492f-bee3-752cf51ea19c&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Signature Teen Glow Facial — $80 CAD">
+            <span class="menu-item__name">Signature Teen Glow Facial<span class="menu-item__dur">1 hr</span><span class="menu-item__desc">Gentle care for teenage skin — breakouts, oil and all.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$80</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal d2" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=db2842a3-93db-47a3-8a29-06527e649e52&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Express Facial — $50 CAD">
+            <span class="menu-item__name">Express Facial<span class="menu-item__dur">30 min</span><span class="menu-item__desc">Thirty minutes over lunch. Cleanse, exfoliate, glow, go.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$50</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+        </div>
+      </section>
+
+      <!-- Advanced Skin Treatments -->
+      <section class="treat-section" id="advanced-skin" aria-labelledby="advanced-skin-title">
+        <div class="treat-section__head reveal">
+          <div>
+            <p class="eyebrow">03 — Medical Grade</p>
+            <h2 id="advanced-skin-title">Advanced Skin Treatments</h2>
+          </div>
+          <p>Science-backed treatments that resurface, tighten and transform — for texture, tone, scarring and aging concerns.</p>
+        </div>
+        <div class="menu-grid">
+          <a class="menu-item reveal" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=77ff1479-a328-488b-a48f-ef4be91a08fe&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Microneedling Consultation — free">
+            <span class="menu-item__name">Microneedling Consultation<span class="menu-item__dur">15 min</span><span class="menu-item__desc">We map out a session plan for scars, texture or fine lines.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price menu-item__price--free">Free</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal d1" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=c1355233-369f-4f72-841b-b8a358e03801&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Microneedling — $200 CAD">
+            <span class="menu-item__name">Microneedling<span class="menu-item__dur">1 hr 30 min</span><span class="menu-item__desc">Tiny channels trigger fresh collagen — texture, pores and acne scars all improve.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$200</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal d2" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=1ed6e4f3-095d-49d1-9c6f-1ea42efd0dcd&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Microneedling with PDT — $200 CAD">
+            <span class="menu-item__name">Microneedling with PDT<span class="menu-item__dur">1 hr</span><span class="menu-item__desc">Adds light therapy to calm the skin and speed healing after needling.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$200</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal d3" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=a908e5bc-e12b-45e4-a415-77d6e62ebea6&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Microneedling with Exosomes — $350 CAD">
+            <span class="menu-item__name">Microneedling with Exosomes<span class="menu-item__dur">1 hr 30 min</span><span class="menu-item__desc">Regenerative serums worked in deep for faster, stronger results.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$350</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal d4" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=7cc84e05-90b7-4852-b313-fb8edb82d158&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Microneedling with Salmon DNA — $450 CAD">
+            <span class="menu-item__name">Microneedling with Salmon DNA<span class="menu-item__dur">1 hr 30 min</span><span class="menu-item__desc">The polynucleotide treatment Korean clinics swear by for plump, elastic skin.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$450</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal d5" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=7ffe936f-3cf5-48d8-b927-2b7500fdc059&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Microneedling — Neck — $200 CAD">
+            <span class="menu-item__name">Microneedling — Neck<span class="menu-item__dur">1 hr</span><span class="menu-item__desc">Smooths crepey neck skin and horizontal lines.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$200</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=94ac82ac-b8de-4ea6-acb9-9fbd1e0307cb&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Microneedling — Hands — $200 CAD">
+            <span class="menu-item__name">Microneedling — Hands<span class="menu-item__dur">40 min</span><span class="menu-item__desc">Because hands show age first.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$200</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal d1" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=29048d75-af4f-40e5-a33b-364d048c1ea7&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Microneedling — Lips — $130 CAD">
+            <span class="menu-item__name">Microneedling — Lips<span class="menu-item__dur">30 min</span><span class="menu-item__desc">Softens lip lines and supports natural fullness.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$130</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal d2" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=36062589-9f79-41f8-8aff-88dd26b26af3&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Chemical Peel Consultation — free">
+            <span class="menu-item__name">Chemical Peel Consultation<span class="menu-item__dur">15 min</span><span class="menu-item__desc">We pick the right peel depth for your skin and your schedule.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price menu-item__price--free">Free</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal d3" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=a7fac15d-c0f8-4360-8e4c-362aa36d94ef&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Chemical Peel — $180 CAD">
+            <span class="menu-item__name">Chemical Peel<span class="menu-item__dur">1 hr</span><span class="menu-item__desc">Controlled exfoliation for pigmentation, acne marks and rough texture.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$180</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal d4" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=96747b94-684e-4788-86d3-01bd6f39b08a&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Dermaplaning + Serum Infusion — $130 CAD">
+            <span class="menu-item__name">Dermaplaning + Serum Infusion<span class="menu-item__dur">1 hr</span><span class="menu-item__desc">Peach fuzz gone, then serums sink in properly. Makeup sits flawlessly after.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$130</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal d5" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=359220aa-e3e2-4a57-96da-d454f2a2f4f1&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Microdermabrasion — $70 CAD">
+            <span class="menu-item__name">Microdermabrasion<span class="menu-item__dur">30 min</span><span class="menu-item__desc">Classic crystal exfoliation to refine pores and rough patches.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$70</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=2199aada-4499-4e82-be75-fa1faffb926c&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book RF Skin Rejuvenation — $200 CAD">
+            <span class="menu-item__name">RF Skin Rejuvenation<span class="menu-item__dur">1 hr</span><span class="menu-item__desc">Radio-frequency warmth firms the face and softens fine lines — no needles involved.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$200</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal d1" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=088cc7f4-c179-4ea0-ba18-396381d15878&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Red Light Therapy — $150 CAD">
+            <span class="menu-item__name">Red Light Therapy<span class="menu-item__dur">1 hr</span><span class="menu-item__desc">Calms inflammation and supports collagen. Relaxing enough to nap through.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$150</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal d2" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=6f57988a-61f2-48b8-a2c9-197f6937facf%7C4d537e64-336b-4484-a023-de07266b62a1&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Lip &amp; Eye Treatment — $50 CAD">
+            <span class="menu-item__name">Lip &amp; Eye Treatment<span class="menu-item__dur">30 min</span><span class="menu-item__desc">Targeted care for the two areas that show tiredness first.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$50</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+        </div>
+      </section>
+
+      <!-- Platelet-Rich Plasma (PRP) -->
+      <section class="treat-section" id="prp" aria-labelledby="prp-title">
+        <div class="treat-section__head reveal">
+          <div>
+            <p class="eyebrow">04 — Regenerative</p>
+            <h2 id="prp-title">Platelet-Rich Plasma (PRP)</h2>
+          </div>
+          <p>Harness your body's own growth factors for natural skin rejuvenation and hair restoration.</p>
+        </div>
+        <div class="menu-grid">
+          <a class="menu-item reveal" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=dd483765-595f-4cdb-aef9-83103be37b09&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Vampire Facial — $350 CAD">
+            <span class="menu-item__name">Vampire Facial<span class="menu-item__dur">1 hr 30 min</span><span class="menu-item__desc">Microneedling with your own plasma — the classic treatment for natural skin renewal.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$350</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal d1" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=2fde4a44-2d8f-4ab0-bac1-20a6ca682f0b&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Vampire Facial + Exosome — $450 CAD">
+            <span class="menu-item__name">Vampire Facial + Exosome<span class="menu-item__dur">2 hr</span><span class="menu-item__desc">PRP boosted with exosomes for deeper repair and a faster glow.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$450</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal d2" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=339481d5-d91f-46a1-ac89-8e29c90f0f50&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Neck Rejuvenation with PRP — $350 CAD">
+            <span class="menu-item__name">Neck Rejuvenation with PRP<span class="menu-item__dur">1 hr</span><span class="menu-item__desc">Firms and brightens the neck — an area creams rarely reach.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$350</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal d3" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=46dca33e-1166-4f8e-8b71-978153ba1364&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Neck PRP + Exosome — $450 CAD">
+            <span class="menu-item__name">Neck PRP + Exosome<span class="menu-item__dur">1 hr 30 min</span><span class="menu-item__desc">Our strongest option for crepey or sun-damaged neck skin.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$450</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal d4" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=1ce948c7-048c-4b8f-a709-371d606eb341&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book PRP Hair Restoration — $400 CAD">
+            <span class="menu-item__name">PRP Hair Restoration<span class="menu-item__dur">1 hr 30 min</span><span class="menu-item__desc">Your own growth factors placed where hair is thinning. No surgery.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$400</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal d5" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=a55d5b6d-dfc0-4d27-9ec4-91eeaa45d78d&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book PRP + Exosome Hair Regeneration — $500 CAD">
+            <span class="menu-item__name">PRP + Exosome Hair Regeneration<span class="menu-item__dur">2 hr</span><span class="menu-item__desc">The most intensive plan we offer for thinning hair and shedding.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$500</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+        </div>
+      </section>
+
+      <!-- RF Body Contouring -->
+      <section class="treat-section" id="body-contouring" aria-labelledby="body-contouring-title">
+        <div class="treat-section__head reveal">
+          <div>
+            <p class="eyebrow">05 — Sculpt &amp; Tone</p>
+            <h2 id="body-contouring-title">RF Body Contouring</h2>
+          </div>
+          <p>Non-invasive radio-frequency treatments that tighten, firm and contour — no downtime required.</p>
+        </div>
+        <div class="menu-grid">
+          <a class="menu-item reveal" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=085da7fe-cf47-41cb-a6c6-5eb5138c78fe&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book RF Consultation — free">
+            <span class="menu-item__name">RF Consultation<span class="menu-item__dur">15 min</span><span class="menu-item__desc">Fifteen minutes to see whether RF contouring suits your goals.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price menu-item__price--free">Free</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal d1" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=d7f753dc-9d21-4463-ad14-b3ab13be5d93&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book RF Body Contouring — $250 CAD">
+            <span class="menu-item__name">RF Body Contouring<span class="menu-item__dur">1 hr</span><span class="menu-item__desc">Radio-frequency heat tightens skin and smooths stubborn areas — no downtime.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$250</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal d2" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=ef2e9baa-b297-499f-b19d-c3796767e164&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book RF Skin Tightening — Abdomen — $200 CAD">
+            <span class="menu-item__name">RF Skin Tightening — Abdomen<span class="menu-item__dur">1 hr</span><span class="menu-item__desc">Popular after weight change or pregnancy for a firmer midsection.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$200</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal d3" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=6eb2fcf3-2fea-4fb7-b069-3ec4ffa3076e&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book RF Skin Tightening — Thighs — $300 CAD">
+            <span class="menu-item__name">RF Skin Tightening — Thighs<span class="menu-item__dur">1 hr 30 min</span><span class="menu-item__desc">Works on laxity and dimpling through the thigh area.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$300</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal d4" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=daeb2db1-7d12-4d3e-8350-4438f96c67e7&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book RF Skin Tightening — Arms — $150 CAD">
+            <span class="menu-item__name">RF Skin Tightening — Arms<span class="menu-item__dur">1 hr</span><span class="menu-item__desc">Firms the upper arms without surgery.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$150</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+        </div>
+      </section>
+
+      <!-- Massage & Body Treatments -->
+      <section class="treat-section" id="massage" aria-labelledby="massage-title">
+        <div class="treat-section__head reveal">
+          <div>
+            <p class="eyebrow">06 — Unwind</p>
+            <h2 id="massage-title">Massage &amp; Body Treatments</h2>
+          </div>
+          <p>Slow down and restore with therapeutic massage and pampering body facials in a serene, private setting.</p>
+        </div>
+        <div class="menu-grid">
+          <a class="menu-item reveal" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=b653f7d6-a958-49e2-a21b-d549aa0658b7&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Full Body Massage — $150 CAD">
+            <span class="menu-item__name">Full Body Massage<span class="menu-item__dur">1 hr 30 min</span><span class="menu-item__desc">Ninety unhurried minutes, head to toe.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$150</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal d1" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=d4a00aab-0a81-4c3f-9ba2-1faf52c31c38%7Cfe61a9d0-3996-4c38-baaa-4c737d32b10e&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Head Massage with Hair Packs — $80 CAD">
+            <span class="menu-item__name">Head Massage with Hair Packs<span class="menu-item__dur">40 min</span><span class="menu-item__desc">Warm oil, scalp massage and a nourishing hair mask.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$80</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal d2" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=b85cbf70-8357-4676-8560-1068bb49d1e4&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Lymphatic Facial Massage — $80 CAD">
+            <span class="menu-item__name">Lymphatic Facial Massage<span class="menu-item__dur">30 min</span><span class="menu-item__desc">Gentle drainage to de-puff the face — lovely before an event.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$80</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal d3" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=b4fc17ac-9052-49e2-8ebf-a5c5c746ccdf%7Cfe61a9d0-3996-4c38-baaa-4c737d32b10e&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Neck Massage — $15 CAD">
+            <span class="menu-item__name">Neck Massage<span class="menu-item__dur">10 min</span><span class="menu-item__desc">A quick release for desk-stiff necks.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$15</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal d4" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=bc2ff08d-9c24-43df-8eae-f10184dde779%7Cfe61a9d0-3996-4c38-baaa-4c737d32b10e&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Shoulder Massage — $15 CAD">
+            <span class="menu-item__name">Shoulder Massage<span class="menu-item__dur">15 min</span><span class="menu-item__desc">Fifteen minutes on the knots you have been carrying around.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$15</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal d5" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=71f8baad-a517-4873-ae09-842c124b7ae4%7C96c92e22-3d3c-403e-b523-dd3ff1de5b36&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Back Facial — $80 CAD">
+            <span class="menu-item__name">Back Facial<span class="menu-item__dur">45 min</span><span class="menu-item__desc">Cleansing and exfoliation for hard-to-reach back skin. Great before backless outfits.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$80</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=d387b39d-ffce-48c5-99b4-c33d0107ca4f%7C96c92e22-3d3c-403e-b523-dd3ff1de5b36&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Hand Facial — $50 CAD">
+            <span class="menu-item__name">Hand Facial<span class="menu-item__dur">30 min</span><span class="menu-item__desc">Exfoliation, massage and hydration for hard-working hands.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$50</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal d1" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=a6308604-b821-4b07-9e3c-5f26b054c6aa%7C96c92e22-3d3c-403e-b523-dd3ff1de5b36&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Foot Facial — $50 CAD">
+            <span class="menu-item__name">Foot Facial<span class="menu-item__dur">30 min</span><span class="menu-item__desc">The pampering your feet actually deserve.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$50</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+        </div>
+      </section>
+
+      <!-- Brows & Lashes -->
+      <section class="treat-section" id="brows-lashes" aria-labelledby="brows-lashes-title">
+        <div class="treat-section__head reveal">
+          <div>
+            <p class="eyebrow">07 — Define</p>
+            <h2 id="brows-lashes-title">Brows &amp; Lashes</h2>
+          </div>
+          <p>Frame your features with expertly shaped brows and lifted, tinted lashes.</p>
+        </div>
+        <div class="menu-grid">
+          <a class="menu-item reveal" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=ff47e657-8cb0-4633-ac1f-af68071eca63&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Eyebrow Lamination &amp; Tint — $80 CAD">
+            <span class="menu-item__name">Eyebrow Lamination &amp; Tint<span class="menu-item__dur">15 min</span><span class="menu-item__desc">Full, brushed-up brows that hold their shape for weeks.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$80</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal d1" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=6e05a317-4580-461f-bd66-1f9e6868145a&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Eyelash Lift &amp; Tint — $80 CAD">
+            <span class="menu-item__name">Eyelash Lift &amp; Tint<span class="menu-item__dur">1 hr</span><span class="menu-item__desc">Curl and depth from your own lashes — skip the mascara.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$80</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal d2" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=53389509-0fd0-4928-bb2c-3f0a564d8c1f%7C07d3d708-c3a5-4ddf-a7d4-dc0a64eb2bbb&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Eyebrow Shaping &amp; Waxing — $15 CAD">
+            <span class="menu-item__name">Eyebrow Shaping &amp; Waxing<span class="menu-item__dur">20 min</span><span class="menu-item__desc">A clean shape mapped to your face, not a template.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$15</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+        </div>
+      </section>
+
+      <!-- Waxing -->
+      <section class="treat-section" id="spa-services" aria-labelledby="spa-services-title">
+        <div class="treat-section__head reveal">
+          <div>
+            <p class="eyebrow">08 — Finishing Touches</p>
+            <h2 id="spa-services-title">Waxing</h2>
+          </div>
+          <p>Gentle, premium waxing for smooth, radiant skin — face and body.</p>
+        </div>
+        <div class="menu-grid">
+          <a class="menu-item reveal" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=23f37d2d-53f8-4035-8c30-e924496d3722%7C07d3d708-c3a5-4ddf-a7d4-dc0a64eb2bbb&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Full Face Waxing — $40 CAD">
+            <span class="menu-item__name">Full Face Waxing<span class="menu-item__dur">45 min</span><span class="menu-item__desc">Everything tidied in one sitting, with gentle wax made for facial skin.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$40</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal d1" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=8c9587e4-4848-4249-a336-d1ebd2de0478%7C07d3d708-c3a5-4ddf-a7d4-dc0a64eb2bbb&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Upper Lip &amp; Chin Waxing — $15 CAD">
+            <span class="menu-item__name">Upper Lip &amp; Chin Waxing<span class="menu-item__dur">30 min</span><span class="menu-item__desc">The quick fix between laser sessions.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$15</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal d2" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=45d66948-1e7d-43d9-8966-5b3e5c25dfe6%7C07d3d708-c3a5-4ddf-a7d4-dc0a64eb2bbb&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Sideburn Waxing — $10 CAD">
+            <span class="menu-item__name">Sideburn Waxing<span class="menu-item__dur">30 min</span><span class="menu-item__desc">Neatens the sides of the face in minutes.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$10</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal d3" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=08a8c13d-42da-49a7-90b2-ebf297ffbaa7%7C07d3d708-c3a5-4ddf-a7d4-dc0a64eb2bbb&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Neck Waxing — $15 CAD">
+            <span class="menu-item__name">Neck Waxing<span class="menu-item__dur">45 min</span><span class="menu-item__desc">Finishes a haircut or hairline cleanly.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$15</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal d4" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=65add0b2-a11e-4d70-9537-fa97c11adf99%7C07d3d708-c3a5-4ddf-a7d4-dc0a64eb2bbb&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Underarm Waxing — $25 CAD">
+            <span class="menu-item__name">Underarm Waxing<span class="menu-item__dur">30 min</span><span class="menu-item__desc">Smoother for longer than shaving, with less shadow.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$25</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal d5" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=3115aa5a-becd-42f5-9c7f-4ee66403eba4%7C07d3d708-c3a5-4ddf-a7d4-dc0a64eb2bbb&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Arm Waxing — $45 CAD">
+            <span class="menu-item__name">Arm Waxing<span class="menu-item__dur">1 hr</span><span class="menu-item__desc">Full arms, wrist to shoulder.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$45</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=4bdd4e45-c1cc-477b-bf68-d73c623d852e%7C07d3d708-c3a5-4ddf-a7d4-dc0a64eb2bbb&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Legs Waxing — $55 CAD">
+            <span class="menu-item__name">Legs Waxing<span class="menu-item__dur">1 hr</span><span class="menu-item__desc">Full legs, silky for weeks.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$55</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal d1" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=93392097-1815-4e48-bcb4-adf177ec4375%7C07d3d708-c3a5-4ddf-a7d4-dc0a64eb2bbb&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Back Waxing — $35 CAD">
+            <span class="menu-item__name">Back Waxing<span class="menu-item__dur">45 min</span><span class="menu-item__desc">Quick, even coverage you cannot manage at home.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$35</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+          <a class="menu-item reveal d2" href="https://aestheticsbyhumaira.setmore.com/book?step=additional-products&amp;products=8801f2d3-b991-4620-ace7-8d1b35c5cc01%7C07d3d708-c3a5-4ddf-a7d4-dc0a64eb2bbb&amp;type=service&amp;staff=3a450b83-be17-4128-918e-755bd266eab9&amp;staffSelected=false" target="_blank" rel="noopener" aria-label="Book Stomach Waxing — $30 CAD">
+            <span class="menu-item__name">Stomach Waxing<span class="menu-item__dur">45 min</span><span class="menu-item__desc">Gentle wax for the tummy line.</span></span>
+            <span class="menu-item__right"><span class="menu-item__price">$30</span><span class="menu-item__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></span>
+          </a>
+        </div>
+      </section>
+
+      <p class="treat-note text-center">All prices in CAD. Every treatment links directly to our secure online booking — or call/text <a href="tel:+14167262840">(416) 726-2840</a> and we'll book you in.</p>
+    </div>
+
+    <!-- CTA band -->
+    <section class="section cta-band" aria-labelledby="cta-title">
+      <div class="container">
+        <p class="eyebrow eyebrow--center reveal">Not Sure Where to Start?</p>
+        <h2 id="cta-title" class="reveal">Let's Build Your Treatment Plan</h2>
+        <p class="reveal">Book a consultation and Dr. Humaira will design a personalized plan for your skin, your goals and your budget.</p>
+        <div class="cta-band__actions reveal">
+          <a class="btn btn--gold btn--lg" href="#" data-book>Book a Consultation</a>
+          <a class="btn btn--light btn--lg" href="tel:+14167262840">Call (416) 726-2840</a>
+          <a class="btn btn--whatsapp btn--lg" href="https://wa.me/14167262840" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.297-.497.1-.198.05-.371-.025-.52-.074-.149-.668-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.064 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.71.306 1.263.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+            WhatsApp
+          </a>
+        </div>
+      </div>
     </section>
   </main>
 
   <!-- Footer -->
-  <footer class="bg-gray-100 py-8 mt-auto border-t border-gray-200 relative" id="main-footer">
-    <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row md:justify-between items-center gap-4">
-      <div class="flex items-center gap-3 mb-2 md:mb-0">
-        <img src="images/medspaLogo.png" alt="Dr Humaira's Laser & Advanced Aesthetics Mississauga Churchill Meadows Logo" class="w-8 h-8 object-cover rounded-full">
-        <span class="font-bold text-pink-700 text-lg break-words text-center">Dr. Humaira's Laser & Advanced Aesthetics</span>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="images/medspaLogo.png" alt="Dr. Humaira's Laser &amp; Advanced Aesthetics logo" width="62" height="62" loading="lazy">
+          <b>Dr. Humaira's Laser &amp; Advanced Aesthetics</b>
+          <p>Physician-led med spa in Churchill Meadows, Mississauga — laser, skin and body treatments personalized to you.</p>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/drhumairasaesthetics/" target="_blank" rel="noopener" aria-label="Follow us on Instagram">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7.75 2A5.75 5.75 0 0 0 2 7.75v8.5A5.75 5.75 0 0 0 7.75 22h8.5A5.75 5.75 0 0 0 22 16.25v-8.5A5.75 5.75 0 0 0 16.25 2h-8.5Zm0 1.5h8.5A4.25 4.25 0 0 1 20.5 7.75v8.5a4.25 4.25 0 0 1-4.25 4.25h-8.5A4.25 4.25 0 0 1 3.5 16.25v-8.5A4.25 4.25 0 0 1 7.75 3.5ZM12 7.25A4.75 4.75 0 1 0 12 16.75 4.75 4.75 0 0 0 12 7.25Zm0 1.5a3.25 3.25 0 1 1 0 6.5 3.25 3.25 0 0 1 0-6.5Zm6-1.38a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/people/Dr-Humairas-Laser-Advanced-Aesthetics/61567471918566/" target="_blank" rel="noopener" aria-label="Follow us on Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22.675 0h-21.35C.595 0 0 .592 0 1.326v21.348C0 23.408.595 24 1.325 24H12.82v-9.294H9.692V11.01h3.127V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.797.143v3.24l-1.92.001c-1.504 0-1.797.715-1.797 1.763v2.31h3.587l-.467 3.696h-3.12V24h6.116C23.405 24 24 23.408 24 22.674V1.326C24 .592 23.405 0 22.675 0"/></svg>
+            </a>
+          </div>
+        </div>
+        <nav aria-label="Footer navigation">
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="treatments.html">All Treatments</a></li>
+            <li><a href="about.html">About Dr. Humaira</a></li>
+            <li><a href="contact.html">Contact &amp; Directions</a></li>
+            <li><a href="index.html#promotions">Current Promotions</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Popular treatments">
+          <h4>Popular Treatments</h4>
+          <ul class="footer-links">
+            <li><a href="treatments.html#laser-hair-removal">Laser Hair Removal Mississauga</a></li>
+            <li><a href="treatments.html#facials">Hydrafacials Mississauga</a></li>
+            <li><a href="treatments.html#advanced-skin">Microneedling &amp; Chemical Peels</a></li>
+            <li><a href="treatments.html#prp">PRP &amp; Hair Restoration</a></li>
+            <li><a href="treatments.html#body-contouring">RF Body Contouring</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h4>Visit Us</h4>
+          <ul class="footer-links footer-contact" style="list-style:none;padding:0;margin:0">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.657 16.657L13.414 21a2 2 0 0 1-2.828 0l-4.243-4.243a8 8 0 1 1 11.314 0z"/><circle cx="12" cy="11" r="3"/></svg>
+              <span>5662 Freshwater Drive,<br>Mississauga, ON L5M 7G1</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92V19a2 2 0 0 1-2.18 2A19.78 19.78 0 0 1 3 5.18 2 2 0 0 1 5 3h2.09a2 2 0 0 1 2 1.72c.12.81.28 1.61.5 2.38a2 2 0 0 1-.45 2.11l-.27.27a16 16 0 0 0 6.29 6.29l.27-.27a2 2 0 0 1 2.11-.45c.77.22 1.57.38 2.38.5A2 2 0 0 1 22 16.92z"/></svg>
+              <a href="tel:+14167262840">(416) 726-2840</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 8v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8m18 0V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2m18 0l-9 6-9-6"/></svg>
+              <a href="mailto:aestheticsbyhumaira.ca@gmail.com">aestheticsbyhumaira.ca<br>@gmail.com</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              <span>Open daily · 10 AM – 10 PM</span>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="flex gap-6 mb-2 md:mb-0">
-        <a href="index.html" class="hover:text-pink-700 transition-colors duration-200">Home</a>
-        <a href="about.html" class="hover:text-pink-700 transition-colors duration-200">About</a>
-        <a href="treatments.html" class="hover:text-pink-700 transition-colors duration-200">Treatments</a>
-        <a href="contact.html" class="hover:text-pink-700 transition-colors duration-200">Contact</a>
-      </div>
-      <div class="flex items-center gap-5">
-        <a href="mailto:aestheticsbyhumaira.ca@gmail.com" class="group" aria-label="Email">
-          <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" class="w-6 h-6 text-gray-700 group-hover:text-pink-600 transition duration-200">
-            <path d="M21 8v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8m18 0V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2m18 0l-9 6-9-6"/>
-          </svg>
-        </a>
-        <a href="tel:1234567890" class="group" aria-label="Phone">
-          <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" class="w-6 h-6 text-gray-700 group-hover:text-pink-600 transition duration-200">
-            <path d="M22 16.92V19a2 2 0 0 1-2.18 2A19.78 19.78 0 0 1 3 5.18 2 2 0 0 1 5 3h2.09a2 2 0 0 1 2 1.72c.12.81.28 1.61.5 2.38a2 2 0 0 1-.45 2.11l-.27.27a16 16 0 0 0 6.29 6.29l.27-.27a2 2 0 0 1 2.11-.45c.77.22 1.57.38 2.38.5A2 2 0 0 1 22 16.92z"/>
-          </svg>
-        </a>
-        <a href="https://www.instagram.com/drhumairasaesthetics/" target="_blank" class="group" aria-label="Instagram">
-          <svg fill="currentColor" viewBox="0 0 24 24" class="w-6 h-6 text-gray-700 group-hover:text-pink-600 transition duration-200">
-            <path d="M7.75 2A5.75 5.75 0 0 0 2 7.75v8.5A5.75 5.75 0 0 0 7.75 22h8.5A5.75 5.75 0 0 0 22 16.25v-8.5A5.75 5.75 0 0 0 16.25 2h-8.5Zm0 1.5h8.5A4.25 4.25 0 0 1 20.5 7.75v8.5a4.25 4.25 0 0 1-4.25 4.25h-8.5A4.25 4.25 0 0 1 3.5 16.25v-8.5A4.25 4.25 0 0 1 7.75 3.5ZM12 7.25A4.75 4.75 0 1 0 12 16.75 4.75 4.75 0 0 0 12 7.25Zm0 1.5a3.25 3.25 0 1 1 0 6.5 3.25 3.25 0 0 1 0-6.5Zm6-1.38a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"/>
-          </svg>
-        </a>
-        <a href="https://www.facebook.com/people/Dr-Humairas-Laser-Advanced-Aesthetics/61567471918566/" target="_blank" class="group" aria-label="Facebook">
-          <svg fill="currentColor" viewBox="0 0 24 24" class="w-6 h-6 text-gray-700 group-hover:text-pink-600 transition duration-200">
-            <path d="M22.675 0h-21.35C.595 0 0 .592 0 1.326v21.348C0 23.408.595 24 1.325 24H12.82v-9.294H9.692V11.01h3.127V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.797.143v3.24l-1.92.001c-1.504 0-1.797.715-1.797 1.763v2.31h3.587l-.467 3.696h-3.12V24h6.116C23.405 24 24 23.408 24 22.674V1.326C24 .592 23.405 0 22.675 0"/>
-          </svg>
-        </a>
+      <div class="footer-bottom">
+        <span>© 2026 Dr. Humaira's Laser &amp; Advanced Aesthetics. All rights reserved.</span>
+        <span>Med Spa · Aesthetic Clinic · Churchill Meadows, Mississauga, ON</span>
       </div>
     </div>
-    <div class="text-center mt-4 text-xs text-gray-400">© 2025 Dr. Humaira's Laser & Advanced Aesthetics. All rights reserved.</div>
   </footer>
-  <script>
-    document.querySelectorAll('.accordion-item button').forEach(btn => {
-      btn.addEventListener('click', function() {
-        const item = btn.closest('.accordion-item');
-        const isOpen = item.classList.contains('open');
-        // Close all others
-        document.querySelectorAll('.accordion-item').forEach(i => {
-          i.classList.remove('open');
-          i.querySelector('button').setAttribute('aria-expanded', 'false');
-        });
-        // Toggle this one
-        if (!isOpen) {
-          item.classList.add('open');
-          btn.setAttribute('aria-expanded', 'true');
-        }
-      });
-    });
-  </script>
+
+  <!-- Floating actions (desktop) -->
+  <div class="fab-stack">
+    <a class="fab-whatsapp" href="https://wa.me/14167262840" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.297-.497.1-.198.05-.371-.025-.52-.074-.149-.668-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.064 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.71.306 1.263.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+    </a>
+  </div>
+
+  <!-- Mobile sticky CTA bar -->
+  <nav class="mobile-cta" aria-label="Quick contact">
+    <a href="tel:+14167262840">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92V19a2 2 0 0 1-2.18 2A19.78 19.78 0 0 1 3 5.18 2 2 0 0 1 5 3h2.09a2 2 0 0 1 2 1.72c.12.81.28 1.61.5 2.38a2 2 0 0 1-.45 2.11l-.27.27a16 16 0 0 0 6.29 6.29l.27-.27a2 2 0 0 1 2.11-.45c.77.22 1.57.38 2.38.5A2 2 0 0 1 22 16.92z"/></svg>
+      Call
+    </a>
+    <a href="sms:+14167262840">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+      Text
+    </a>
+    <a class="mobile-cta__wa" href="https://wa.me/14167262840" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.297-.497.1-.198.05-.371-.025-.52-.074-.149-.668-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.064 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.71.306 1.263.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+      WhatsApp
+    </a>
+    <a class="mobile-cta__book" href="#" data-book>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+      Book
+    </a>
+  </nav>
+
+  <!-- Booking modal -->
+  <div class="modal" id="booking-modal" role="dialog" aria-modal="true" aria-label="Book an appointment">
+    <div class="modal__panel">
+      <button class="modal__close" type="button" aria-label="Close booking window">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+      <div class="modal__frame"></div>
+    </div>
+  </div>
 </body>
 </html>
