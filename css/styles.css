@@ -556,7 +556,7 @@ section {
 .card-grid {
   display: grid;
   gap: 1.4rem;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(280px, 100%), 1fr));
 }
 
 .card {
@@ -725,6 +725,7 @@ section {
 .treat-nav {
   position: sticky;
   top: 76px;
+  overflow: hidden; /* keeps the edge fades/chevrons from extending the page width */
   z-index: 60;
   background: rgba(250, 246, 241, 0.94);
   backdrop-filter: blur(12px);
@@ -778,13 +779,15 @@ section {
 .treat-nav.can-right::after {
   opacity: 1;
 }
+/* Both chevrons nudge inward from the edge — never past it, or the page
+   itself gains a few pixels of horizontal scroll on every animation cycle. */
 @keyframes chipNudge {
-  0%, 100% { transform: translateX(0); }
-  50% { transform: translateX(4px); }
+  0%, 100% { transform: translateX(-4px); }
+  50% { transform: translateX(0); }
 }
 @keyframes chipNudgeLeft {
-  0%, 100% { transform: translateX(0); }
-  50% { transform: translateX(-4px); }
+  0%, 100% { transform: translateX(4px); }
+  50% { transform: translateX(0); }
 }
 .treat-nav__inner {
   display: flex;
@@ -862,7 +865,8 @@ section {
 .menu-grid {
   display: grid;
   gap: 0.9rem;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  /* min() keeps the track from exceeding the container on 320px phones */
+  grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
 }
 .menu-item {
   display: flex;
@@ -1082,7 +1086,7 @@ section {
 .t-grid {
   display: grid;
   gap: 1.4rem;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
   align-items: start;
 }
 .t-card {
@@ -1370,7 +1374,7 @@ section {
 .contact-grid {
   display: grid;
   gap: 1.2rem;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(230px, 100%), 1fr));
 }
 .contact-card {
   background: #fff;
@@ -1728,6 +1732,15 @@ section {
 }
 .reveal--right {
   transform: translateX(30px);
+}
+/* Below 1240px the container has less than 30px of side margin, so a
+   horizontal reveal would sit past the viewport edge and allow the page
+   to pan sideways. Fall back to the vertical reveal there. */
+@media (max-width: 1239px) {
+  .reveal.reveal--left,
+  .reveal.reveal--right {
+    transform: translateY(26px);
+  }
 }
 .reveal.in-view {
   opacity: 1;
